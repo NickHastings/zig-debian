@@ -1,0 +1,65 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: zig
+Upstream-Contact: Andrew Kelly <andrew@ziglang.org>
+Source: https://github.com/ziglang/zig
+
+Files:     *
+Copyright: 2015-2022, Zig contributors
+License: Expat
+
+Files:     lib/libcxxabi/*
+Copyright: 2009-2019, LLVM Team
+License: Apache-2
+
+Files:     lib/libc/wasi/*
+Copyright: 2018-2020, wasi-libc contributors
+License: Apache-2 and Expat and Apache-2 with LLVM exception 
+Comment:
+ Apache-2 with LLVM exception: As an exception, if, as a result of
+ your compiling your source code, portions of this Software are
+ embedded into an Object form of such source code, you may
+ redistribute such embedded portions in such Object form without
+ complying with the conditions of Sections 4(a), 4(b) and 4(d) of the
+ License.
+ .
+ In addition, if you combine or link compiled forms of this Software with
+ software that is licensed under the GPLv2 ("Combined Software") and if a
+ court of competent jurisdiction determines that the patent provision (Section
+ 3), the indemnity provision (Section 9) or other Section of the License
+ conflicts with the conditions of the GPLv2, you may retroactively and
+ prospectively choose to deem waived or otherwise exclude such Section(s) of
+ the License, but only in their entirety and only with respect to the Combined
+ Software.
+
+Files:     lib/libc/wasi/dlmalloc
+Copyright: 2012, Doug Lea
+License: CC0
+
+Files:     lib/libc/wasi/libc-bottom-half/cloudlibc
+Copyright:  2015-2017 Nuxi (https://nuxi.nl/) and contributor
+License: BSD-2-Clause
+
+Files:     lib/libc/wasi/libc-top-half/musl/
+Copyright: 2005-2020 Rich Felker, et al.
+License: Expat
+
+Files:   lib/libc/glibc/*  
+Copyright: FSF
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+ 
+Files:     lib/libunwind/*
+Copyright: 2001-2005 Hewlett-Packard Co.
+           2007 David Mosberger-Tang
+License: Expat

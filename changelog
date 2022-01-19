@@ -1,0 +1,11 @@
+zig (0.9.0-1~bpo11+1) bullseye-backports; urgency=medium
+
+  * New upstream release.
+
+ -- Nick Hastings <nicholaschastings@gmail.com>  Wed, 05 Jan 2022 10:25:38 +0900
+
+zig (0.8.1-1~bpo11+1) bullseye-backports; urgency=low
+
+  * Initial release
+
+ -- Nick Hastings <nicholaschastings@gmail.com>  Tue, 04 Jan 2022 17:59:51 +0900

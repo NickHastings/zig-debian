@@ -1,0 +1,26 @@
+Source: zig
+Section: devel
+Priority: optional
+Maintainer: Nick Hastings <nicholaschastings@gmail.com>
+Build-Depends: cmake, debhelper-compat (= 12), gcc (>= 7.0.0),
+ clang (>= 6.0.0),
+ llvm-13-dev,
+ libclang-13-dev,
+ liblld-13-dev,
+Standards-Version: 4.5.0
+Homepage: https://github.com/ziglang/zig
+
+Package: zig
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Imperative, general-purpose, statically typed, system programming language
+ The ultimate goal of the Zig project is to serve users. As a
+ first-order effect, this means users of the compiler, helping
+ programmers to write better software. Even more important, however,
+ are the end-users. Zig is intended to be used to help end-users
+ accomplish their goals. Zig should be used to empower end-users,
+ never to exploit them financially, or to limit their freedom to
+ interact with hardware or software in any way.
+ .
+ This package provides the zig compiler.
