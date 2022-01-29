@@ -2,7 +2,7 @@ Source: zig
 Section: devel
 Priority: optional
 Maintainer: Nick Hastings <nicholaschastings@gmail.com>
-Build-Depends: cmake, debhelper-compat (= 12), gcc (>= 7.0.0),
+Build-Depends: cmake, debhelper-compat (= 13), gcc (>= 7.0.0),
  clang (>= 6.0.0),
  llvm-13-dev,
  libclang-13-dev,
