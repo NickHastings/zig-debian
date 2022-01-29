@@ -19,11 +19,11 @@ Files:     lib/libc/wasi/dlmalloc/*
 Copyright: 2012, Doug Lea
 License: CC0
 
-Files:     lib/libc/wasi/libc-bottom-half/cloudlibc
+Files:     lib/libc/wasi/libc-bottom-half/cloudlibc/*
 Copyright:  2015-2017 Nuxi (https://nuxi.nl/) and contributors
 License: BSD-2-Clause
 
-Files:     lib/libc/wasi/libc-top-half/musl/
+Files:     lib/libc/wasi/libc-top-half/musl/*
 Copyright: 2005-2020 Rich Felker, et al.
 License: Expat
  
