@@ -1,4 +1,4 @@
-zig (0.9.1-1) UNRELEASED; urgency=medium
+zig (0.9.1-1) unstable; urgency=medium
 
   * New upstream release.
 
@@ -12,6 +12,6 @@ zig (0.9.0-1) unstable; urgency=medium
 
 zig (0.8.1-1) unstable; urgency=low
 
-  * Initial release
+  * Initial packaging (Closes: #995670).
 
  -- Nick Hastings <nicholaschastings@gmail.com>  Tue, 04 Jan 2022 17:59:51 +0900
