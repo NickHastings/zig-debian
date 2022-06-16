@@ -1,21 +1,19 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: zig
+Upstream-Contact: Andrew Kelly <andrew@ziglang.org>
+Source: https://github.com/ziglang/zig
 
 Files: *
+Copyright: 2015-2021, Zig Contributors
+License: Expat
+
+
+Files: lib/*
 Copyright: & Marcus Metzler <marcus@convergence.de>
-           (FSRTL_FAT_LEGAL) |
-           (FSRTL_HPFS_LEGAL) |
-           (FSRTL_NTFS_LEGAL) |
-           (I))
-           (__mmask8)-1
-           (int)(imm)
-           1) ? (void)0 : __chk_fail())
-           2015, 6WIND S.A
-           < 0) ? DEFAULT_RET :
            1996, ACN S.A
            2018-2020, ANSSI
            2017-2018, ARM Limited
            2012-2021, ARM Ltd
-           Additional copyrights listed below
            1995, Adrian M. Rodriguez <adrian@remus.rutgers.edu>
            2016-2017, Advanced Micro Devices, Inc
            1999, Al Smith
@@ -151,7 +149,6 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            1999, Paul `Rusty' Russell & Michael J. Neuling
            Pavel Machek <pavel@ucw.cz.>
            2001-2004, Peter Osterlund <petero2@telia.com>
-           Public Domain
            2015-2016, QLogic Corporation
            2017-2018, Qiang Yu <yuq825@gmail.com>
            2020, Qualcomm Innovation Center, Inc
@@ -186,13 +183,10 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            2007, Stefan Kopp, Gechingen, Germany
            2011, Steffen Klassert <steffen.klassert@secunet.com>
            1999, Stephane Eranian <eranian@hpl.hp.com>
-           Steve Whitehouse
            Steven Whitehouse
            2005, Stuart Brady
            2008, Sun Microsystems
            2001, Sun Microsystems <thockin@sun.com>
-           TRUE, (WILD_OK), FSRTL_NTFS_STREAM_LEGAL)
-           TRUE, FALSE, (FLAGS))
            2021, Taehee Yoo <ap420073@gmail.com>
            2017, Texas Instruments
            2020, The Linux Foundation
@@ -204,7 +198,6 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            1992-1994, Theodore Ts'o
            1993, Theodore Ts'o. Redistribution of this file is
            2006, Thiemo Seufer
-           This code is GPL
            1999, Thomas Davis <tadavis@lbl.gov>
            2008-2009, Thomas Gleixner <tglx@linutronix.de>
            1996-1998, Thomas Sailer, HB9JNX/AE4WA
@@ -223,23 +216,7 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            2009, Wolfgang Grandegger <wg@grandegger.com>
            2019, Xilinx, Inc
            Yaniv Kamay <yaniv@qumranet.com>
-           2015-2021, Zig Contributors
-           _MM_FROUND_CUR_DIRECTION
-           `. lhs is 0, rhs is token index of the rparen
-           const u8
-           1999, derived from the
-           details
-           for convergence integrated media GmbH
-           inclules a note:
-           issues. I have therefore
-           it's amazing what adding a bunch of 6s can do =8^
-           2011, secunet Security Networks AG
-           this header was blatantly ripped from netfilter_ipv4.h
-           written by Ralf Baechle
-           |_, i|
 License: Expat
-Comment: No explicit license found, using license(s) from:
- LICENSE
 
 Files: lib/libc/musl/*
 Copyright: 2012-2020, Arm Limited
@@ -249,8 +226,8 @@ Copyright: 2012-2020, Arm Limited
            2008, Steven G. Kargl, David Schultz, Bruce D. Evans
            1993-2004, Sun Microsystems, Inc
 License: Expat
-Comment: No explicit license found, using license(s) from:
- lib/libc/musl/COPYRIGHT
+Comment: No explicit license found, using license(s) from: lib/libc/musl/COPYRIGHT
+FIXME: COPYRIGHT file has a lont list of "Authors/contributors include"
 
 Files: lib/libc/wasi/*
 Copyright: 2012-2020, Arm Limited
@@ -259,9 +236,7 @@ Copyright: 2012-2020, Arm Limited
            1998-2014, Solar Designer and it is hereby released to the
            2008, Steven G. Kargl, David Schultz, Bruce D. Evans
            1993-2004, Sun Microsystems, Inc
-License: Expat
-Comment: No explicit license found, using license(s) from:
- lib/libc/wasi/libc-top-half/musl/COPYRIGHT
+License: Apache-2 and Expat and Apache-2 with LLVM exception
 
 Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/aarch64-linux-gnu/bits/fenv.h
@@ -1447,8 +1422,7 @@ Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/x86_64-linux-gnux32/finclude/*
        lib/libc/include/x86_64-linux-gnux32/fpu_control.h
        lib/libc/include/x86_64-linux-gnux32/sys/*
-Copyright: & (unsigned short int) type)
-           2002, Alexandre Julliard
+Copyright: 2002, Alexandre Julliard
            Andre Draszik <ad@convergence.de>
            2002, Andreas Gruenbacher <a.gruenbacher@computer.org>
            2015, Andrew Eikum for CodeWeavers
@@ -1512,6 +1486,8 @@ Copyright: 2010, L'A' +
 License: ZPL-2.1
 Comment: No explicit license found, using license(s) from:
  lib/libc/mingw/COPYING
+
+
 
 Files: lib/libcxx/*
 Copyright: ) : c
@@ -1949,8 +1925,7 @@ Copyright: 1994, Adam Glass
            1995-1998, WIDE Project
 License: BSD-4-clause
 
-Files: lib/libc/mingw/COPYING
-       lib/libc/mingw/complex/*
+Files: lib/libc/mingw/complex/*
        lib/libc/mingw/math/powi.c
        lib/libc/mingw/math/powi.def.h
        lib/libc/mingw/math/powif.c
@@ -1985,8 +1960,7 @@ Files: lib/libc/mingw/COPYING
        lib/libc/mingw/math/x86/sinl.c
        lib/libc/mingw/stdio/mingw_vfscanf.c
        lib/libc/mingw/stdio/mingw_wvfscanf.c
-Copyright: != match_txt[0
-           2009-2013, the mingw-w64 project
+Copyright: 2009-2013, the mingw-w64 project
 License: ZPL-2.1
 
 Files: lib/libc/glibc/abilists
@@ -2620,16 +2594,39 @@ Copyright: 2008, Stephen L. Moshier <steve@moshier.net>
 License: ISC
 
 Files: lib/libc/include/generic-glibc/fts.h
-       lib/libc/include/generic-glibc/netinet/if_ether.h
-       lib/libc/include/generic-glibc/netinet/igmp.h
-       lib/libc/include/generic-glibc/netinet/ip.h
-       lib/libc/include/generic-glibc/netinet/ip_icmp.h
-       lib/libc/include/generic-glibc/netinet/udp.h
-       lib/libc/include/generic-glibc/sys/quota.h
-Copyright: 1991-2021, Free Software Foundation, Inc
-           1982-1986, Regents of the University of California
+Copyright: 1994-2021, Free Software Foundation, Inc
+           1989-1993, The Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files: lib/libc/include/generic-glibc/netinet/if_ether.h
+Copyright: 1996-2021, Free Software Foundation, Inc
+           1982-1993, The Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files: lib/libc/include/generic-glibc/netinet/igmp.h
+Copyright: 1997-2021, Free Software Foundation, Inc
            1988, Stephen Deering
            1982-1993, The Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files: lib/libc/include/generic-glibc/netinet/ip.h
+Copyright: 1991-2021, Free Software Foundation, Inc
+           1982-1993, The Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files: lib/libc/include/generic-glibc/netinet/ip_icmp.h
+Copyright: 1991-2021, Free Software Foundation, Inc
+           1982-1993, The Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files:  lib/libc/include/generic-glibc/netinet/udp.h
+Copyright: 1991-2021, Free Software Foundation, Inc
+           1982-1986, Regents of the University of California
+License: BSD-3-clause or LGPL-2.1+
+
+Files: lib/libc/include/generic-glibc/sys/quota.h
+Copyright: 1998-2021, Free Software Foundation, Inc
+           1982-1986, Regents of the University of California
 License: BSD-3-clause or LGPL-2.1+
 
 Files: lib/libc/include/any-linux-any/xen/gntalloc.h
@@ -2638,8 +2635,179 @@ Files: lib/libc/include/any-linux-any/xen/gntalloc.h
        lib/libc/include/any-windows-any/ddk/punknown.h
        lib/libc/include/any-windows-any/ddk/stdunk.h
        lib/libc/include/any-windows-any/driverspecs.h
-       lib/libc/include/any-windows-any/sdkddkver.h
+Copyright: none
 License: public-domain
+ This file is in the public domain.
+ 
+Files: lib/libc/include/any-windows-any/sdkddkver.h
+Copyright: none
+License: public-domain
+ This file has no copyright assigned and is placed in the Public Domain.
+ 
+Files:     lib/libc/mingw/misc/dirent.c
+Copyright: none
+License:   public-domain
+ This file has no copyright assigned and is placed in the Public Domain.
+ This file is part of the mingw-runtime package.
+ No warranty is given; refer to the file DISCLAIMER within the package.
+
+Files:     lib/libc/mingw/misc/mingw-aligned-malloc.c
+Copyright: none
+License:   public-domain
+ This file has no copyright assigned and is placed in the Public Domain.
+ This file is part of the mingw-w64 runtime package.
+ No warranty is given; refer to the file DISCLAIMER.PD within this package.
+ .
+ __mingw_aligned_malloc and friends, implemented using Microsoft's public
+ interfaces and with the help of the algorithm description provided
+ by Wu Yongwei: http://sourceforge.net/mailarchive/message.php?msg_id=3847075
+ .
+ I hereby place this implementation in the public domain.
+               -- Steven G. Johnson (stevenj@alum.mit.edu)
+
+Files:     lib/libc/mingw/misc/tdelete.c
+           lib/libc/mingw/misc/tfind.c
+           lib/libc/mingw/misc/tsearch.c
+           lib/libc/mingw/misc/twalk.c
+Copyright: none
+License:   public-domain
+ Tree search generalized from Knuth (6.2.2) Algorithm T just like
+ the AT&T man page says.
+ .
+ The node_t structure is for internal use only, lint doesn't grok it.
+ .
+ Written by reading the System V Interface Definition, not the code.
+ .
+ Totally public domain.
+
+Files:     lib/libc/include/any-windows-any/winddi.h
+           lib/libc/include/any-windows-any/stdint.h
+           lib/libc/include/any-windows-any/ntdd8042.h
+           lib/libc/include/any-windows-any/devioctl.h
+           lib/libc/include/any-windows-any/ksdebug.h
+           lib/libc/include/any-windows-any/dir.h
+           lib/libc/include/any-windows-any/ntiologc.h
+           lib/libc/include/any-windows-any/ntddft.h
+           lib/libc/include/any-windows-any/hidpi.h
+           lib/libc/include/any-windows-any/ntddvol.h
+           lib/libc/include/any-windows-any/ntddcdvd.h
+           lib/libc/include/any-windows-any/hidsdi.h
+           lib/libc/include/any-windows-any/bdamedia.h
+           lib/libc/include/any-windows-any/ntddcdrm.h
+           lib/libc/include/any-windows-any/ntddstor.h
+           lib/libc/include/any-windows-any/winsplp.h
+           lib/libc/include/any-windows-any/lmon.h
+           lib/libc/include/any-windows-any/dpfilter.h
+           lib/libc/include/any-windows-any/compstui.h
+           lib/libc/include/any-windows-any/ntddmou.h
+           lib/libc/include/any-windows-any/nettypes.h
+           lib/libc/include/any-windows-any/ntddchgr.h
+           lib/libc/include/any-windows-any/unknown.h
+           lib/libc/include/any-windows-any/newdev.h
+           lib/libc/include/any-windows-any/ntddpar.h
+           lib/libc/include/any-windows-any/devpropdef.h
+           lib/libc/include/any-windows-any/ddk/ndistapi.h
+           lib/libc/include/any-windows-any/ddk/mcd.h
+           lib/libc/include/any-windows-any/ddk/parallel.h
+           lib/libc/include/any-windows-any/ddk/ntifs.h
+           lib/libc/include/any-windows-any/ddk/ws2san.h
+           lib/libc/include/any-windows-any/ddk/pfhook.h
+           lib/libc/include/any-windows-any/ddk/ntddpcm.h
+           lib/libc/include/any-windows-any/ddk/storport.h
+           lib/libc/include/any-windows-any/ddk/poclass.h
+           lib/libc/include/any-windows-any/ddk/ndis.h
+           lib/libc/include/any-windows-any/ddk/scsiscan.h
+           lib/libc/include/any-windows-any/ddk/afilter.h
+           lib/libc/include/any-windows-any/ddk/miniport.h
+           lib/libc/include/any-windows-any/ddk/csq.h
+           lib/libc/include/any-windows-any/ddk/d4drvif.h
+           lib/libc/include/any-windows-any/ddk/ntagp.h
+           lib/libc/include/any-windows-any/ddk/kbdmou.h
+           lib/libc/include/any-windows-any/ddk/ndisguid.h
+           lib/libc/include/any-windows-any/ddk/srb.h
+           lib/libc/include/any-windows-any/ddk/usbscan.h
+           lib/libc/include/any-windows-any/ddk/tdikrnl.h
+           lib/libc/include/any-windows-any/ddk/wdmguid.h
+           lib/libc/include/any-windows-any/ddk/videoagp.h
+           lib/libc/include/any-windows-any/ddk/wdm.h
+           lib/libc/include/any-windows-any/ddk/upssvc.h
+           lib/libc/include/any-windows-any/ddk/xfilter.h
+           lib/libc/include/any-windows-any/ddk/smbus.h
+           lib/libc/include/any-windows-any/ddk/tdistat.h
+           lib/libc/include/any-windows-any/ddk/video.h
+           lib/libc/include/any-windows-any/ddk/atm.h
+           lib/libc/include/any-windows-any/ddk/ide.h
+           lib/libc/include/any-windows-any/ddk/minitape.h
+           lib/libc/include/any-windows-any/ddk/ioaccess.h
+           lib/libc/include/any-windows-any/ddk/scsi.h
+           lib/libc/include/any-windows-any/ddk/ndiswan.h
+           lib/libc/include/any-windows-any/ddk/scsiwmi.h
+           lib/libc/include/any-windows-any/ddk/ntpoapi.h
+           lib/libc/include/any-windows-any/ddk/hidclass.h
+           lib/libc/include/any-windows-any/ddk/ntddk.h
+           lib/libc/include/any-windows-any/ntdddisk.h
+           lib/libc/include/any-windows-any/ntddkbd.h
+           lib/libc/include/any-windows-any/sys/param.h
+           lib/libc/include/any-windows-any/ntddvdeo.h
+           lib/libc/include/any-windows-any/complex.h
+           lib/libc/include/any-windows-any/usbrpmif.h
+           lib/libc/include/any-windows-any/tdi.h
+           lib/libc/include/any-windows-any/ntddtape.h
+           lib/libc/include/any-windows-any/kcom.h
+           lib/libc/include/any-windows-any/ntddser.h
+           lib/libc/include/any-windows-any/prntfont.h
+           lib/libc/include/any-windows-any/evntprov.h
+           lib/libc/include/any-windows-any/usbcamdi.h
+           lib/libc/include/any-windows-any/ntdef.h
+           lib/libc/include/any-windows-any/netevent.h
+           lib/libc/include/any-windows-any/ntddtdi.h
+           lib/libc/include/any-windows-any/atsmedia.h
+           lib/libc/include/any-windows-any/tdiinfo.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusmem.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluscolor.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusmatrix.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusbase.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplus.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusgpstubs.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluseffects.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusimpl.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusimageattributes.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusstringformat.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplustypes.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusheaders.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusflat.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusmetaheader.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluslinecaps.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusenums.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusbrush.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusmetafile.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusimagecodec.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluspath.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusinit.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusimaging.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluspen.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluscolormatrix.h
+           lib/libc/include/any-windows-any/gdiplus/gdipluspixelformats.h
+           lib/libc/include/any-windows-any/gdiplus/gdiplusgraphics.h
+           lib/libc/include/any-windows-any/hidusage.h
+           lib/libc/include/any-windows-any/uchar.h
+           lib/libc/mingw/crt/pseudo-reloc.c
+           lib/libc/mingw/misc/uchar_c16rtomb.c
+           lib/libc/mingw/misc/uchar_mbrtoc16.c
+           lib/libc/mingw/misc/uchar_mbrtoc32.c
+           lib/libc/mingw/misc/uchar_c32rtomb.c
+Copyright: none
+License:   public-domain
+ THIS SOFTWARE IS NOT COPYRIGHTED
+ .
+ This source code is offered for use in the public domain. You may
+ use, modify or distribute it freely.
+ .
+ This code is distributed in the hope that it will be useful but
+ WITHOUT ANY WARRANTY. ALL WARRANTIES, EXPRESS OR IMPLIED ARE HEREBY
+ DISCLAIMED. This includes but is not limited to warranties of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 
 Files: lib/libc/include/any-linux-any/linux/nfc.h
        lib/libc/include/any-linux-any/linux/nl80211.h
@@ -2686,14 +2854,25 @@ Copyright: 2006, Balbir Singh, IBM Corp
            2006, Shailabh Nagar, IBM Corp
 License: LGPL-2.1
 
+
+FIXME: The following four files all start with the line:
+/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+but text just looks like gpl-2
 Files: lib/libc/include/any-linux-any/linux/btrfs.h
-       lib/libc/include/any-linux-any/linux/edd.h
-       lib/libc/include/any-linux-any/linux/nbd-netlink.h
-       lib/libc/include/any-linux-any/linux/udf_fs_i.h
+Copyright: 2007, Oracle
+License: GPL-2
+
+Files: lib/libc/include/any-linux-any/linux/edd.h
 Copyright: 2002-2004, Dell Inc
-           2017, Facebook
-           2007, Oracle
-License: GPL
+License: GPL-2
+
+Files: lib/libc/include/any-linux-any/linux/nbd-netlink.h
+Copyright: 2017, Facebook
+License: GPL-2
+
+Files: lib/libc/include/any-linux-any/linux/udf_fs_i.h
+Copyright: Unknown
+License: GPL-2
 
 Files: lib/libc/include/any-windows-any/vsstyle.h
        lib/libc/include/any-windows-any/vssym32.h
@@ -2717,10 +2896,8 @@ Copyright: 2012, Nokia Corporation
            1999-2012, the contributors
 License: BSD-3-clause or GPL-2+
 
-Files: lib/libc/wasi/libc-bottom-half/cloudlibc/LICENSE
-       lib/libc/wasi/libc-bottom-half/cloudlibc/src/include/*
-Copyright: 2015-2017, Nuxi (https://nuxi.nl/)
-           2015-2017, Nuxi, https://nuxi.nl
+Files: lib/libc/wasi/libc-bottom-half/cloudlibc/*
+Copyright: 2015-2017, Nuxi (https://nuxi.nl/) and contributors
 License: BSD-2-clause
 
 Files: lib/libc/musl/COPYRIGHT
@@ -2768,450 +2945,6 @@ Files: lib/libcxx/src/support/solaris/mbsnrtowcs.inc
        lib/libcxx/src/support/solaris/wcsnrtombs.inc
 Copyright: 2002-2004, Tim J. Robbins
 License: BSD-2-clause
-
-Files: lib/libc/wasi/LICENSE-APACHE
-       lib/libc/wasi/LICENSE-APACHE-LLVM
-License: Apache-2
-
-Files: debmake-cc.log
-Copyright: 2003, + Evgeniy Polyakov <johnpol@2ka.mxt.ru>
-           1994-1998, 4Front Technologies
-           2017-2018, ARM Limited
-           2011-2013, ARM Ltd
-           1994-2003, Abramo Bagnara <abramo@alsa-project.org>
-           1995, Adrian M. Rodriguez <adrian@remus.rutgers.edu>
-           2014-2017, Advanced Micro Devices, Inc
-           1999, Al Smith
-           2001-2002, Alcôve <www.alcove.com>
-           2002, Alexandre Julliard
-           2001, Alexey Zelkin <phantom@FreeBSD.org>
-           2016, Amir Vadai <amir@vadai.me>
-           2009-2011, Amit Shah <amit.shah@redhat.com>
-           2000, Andre Draszik <ad@convergence.de>
-           1999, Andreas Gal
-           2002, Andreas Gruenbacher <a.gruenbacher@computer.org>
-           2015, Andrew Eikum for CodeWeavers
-           2008, Andrew Fenn
-           2014-2021, Andrew Kelley
-           2009, Andrew Nguyen
-           2000, Andrew Tridgell <tridge@valinux.com>
-           2002, Andy Grover <andrew.grover@intel.com>
-           1985-2021, Apple Inc
-           2014-2017, Apple, Inc
-           2012-2020, Arm Limited. SPDX-License-Identifier: MIT
-           1998-2003, Arnaldo Carvalho de Melo
-           2013, Asias He <asias@redhat.com>
-           2001-2019, Author(s): Robert Burroughs Eric Rossman <edrossma@us.ibm.com>
-           2011-2013, Autronica Fire and Security AS
-           2015, Azael Avalos <coproscefalo@gmail.com>
-           B.A.T.M.A.N. contributors:
-           2006, Balbir Singh, IBM Corp
-           1995-1999, Berkeley Software Design, Inc
-           2014-2018, Broadcom
-           2016-2017, Broadcom. The term Broadcom refers to Broadcom Limited and/or its subsidiaries
-           2005, Bruce D. Evans and Steven G. Kargl
-           2009-2011, Bruce D. Evans, Steven G. Kargl, David Schultz
-           1987-1999, Carnegie Mellon University
-           1987-1999, Carnegie Mellon University Additional copyrights listed below
-           1997, Carsten Paeth <calle@calle.de>
-           1997, Carsten Paeth <calle@calle.in-berlin.de>
-           2009-2010, Chelsio, Inc
-           2004-2010, Christian Costa
-           2005-2006, Cisco Systems
-           2007, Cisco Systems, Inc
-           1999-2000, Cisco, Inc
-           1999, Citrus Project
-           2008, Colin McCabe <colin@cozybit.com>
-           2007, Craig W. Nadler
-           Creative Labs, Inc. Definitions for EMU10K1 (SB Live!) chips
-           2007, D G Murray
-           2007, Dave Airlie <airlied@linux.ie>
-           2015, Dave Penkler <dpenkler@gmail.com>
-           2007, David ADAM
-           2018, David Abdurachmanov <david.abdurachmanov@gmail.com>
-           2007-2009, David Adam
-           1994, David Burren
-           1992, David Giller <rafetmad@oxy.edu>
-           2012, David Herrmann
-           1993, David L. Mills
-           2004-2005, David M. Gay
-           1994-1997, David S. Miller <davem@caip.rutgers.edu>
-           1995-2007, David S. Miller <davem@davemloft.net>
-           2011, David Schultz
-           2005-2011, David Schultz <das@FreeBSD.ORG>
-           1999-2010, David Woodhouse <dwmw2@infradead.org>
-           1996, David van Leeuwen <david@tm.tno.nl>
-           2001-2006, Davide Libenzi
-           2000, Deep Blue Solutions Ltd
-           1993, Digital Equipment Corporation
-           2013, Dmitry Kasatkin <d.kasatkin@samsung.com>
-           2007, Dmitry Torokhov
-           1994, Drew Eckhardt
-           2011, Dylan Smith
-           2010-2011, EIA Electronics
-           EMC Corporation
-           1994-1995, Eberhard Mönkeberg <emoenke@gwdg.de>
-           2012-2015, Emulex
-           2005, Eric Anholt
-           2003-2016, Ericsson AB
-           2015, Etnaviv Project
-           2016-2017, Facebook
-           2004, Felix Kuehling
-           1998, Franco Venturi
-           1999-2011, Francois Gouget
-           1998-1999, Frank van de Pol <fvdpol@coil.demon.nl>
-           1985-2021, Free Software Foundation, Inc
-           2008-2011, Freescale Semiconductor, Inc
-           1995-2000, Frodo Looijaard <frodol@dds.nl>
-           2030, Frost Street, Cambridge, MA 02140
-           1995-2003, Geert Uytterhoeven
-           2019, Google Inc
-           2008-2012, Google, Inc
-           1992, Greg Harp
-           2008, Greg Kroah-Hartman <gregkh@suse.de>
-           2016, Grzegorz Kraszewski
-           2009, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
-           1993-1997, Hannu Savolainen
-           2006, Hans Leidekker
-           2012-2016, Hans Verkuil <hans.verkuil@cisco.com>
-           2004-2007, Hans Verkuil <hverkuil@xs4all.nl>
-           2015, Hans de Goede <hdegoede@redhat.com>
-           2002, Harald Welte <laforge@gnumonks.org>
-           2005, Harald Welte <laforge@netfilter.org>
-           2008-2009, Henri Verbeet for CodeWeavers
-           2010, Herbert Xu <herbert@gondor.apana.org.au>
-           2016, Hisilicon Limited
-           2000-2001, Holger Waechtler <holger@convergence.de>
-           2015, IBM
-           2001-2020, IBM Corp
-           2007-2016, IBM Corporation
-           2018, IVI Foundation, Inc
-           2006-2007, Ian Armstrong <ian@iarmst.demon.co.uk>
-           2005-2018, Ian Kent <raven@themaw.net>
-           2013-2015, Ideas on Board
-           2015, Imagination Technologies
-           1998, Ingo Molnar
-           1996-1998, Ingo Molnar, Gadi Oxman
-           2011, Instituto Nokia de Tecnologia
-           2015-2016, Integrated Device Technology Inc
-           2002-2016, Intel Corp
-           2010, Intel Corp. Huang Ying <ying.huang@intel.com>
-           2004-2021, Intel Corporation
-           2012-2014, Intel Corporation Contact: Sakari Ailus <sakari.ailus@iki.fi>
-           2017-2018, Intel Corporation, Inc
-           2015-2017, Intel Deutschland GmbH
-           2015, Intel Ltd
-           2021, Interface implementation for communication with the CPU Measurement counter facility device driver
-           2004-2005, Interface implementation for communication with the z/VM control program Version 1.0 Author(s): Christian Borntraeger <cborntra@de.ibm.com>
-           2006, International Business Machines Corp
-           1996-1999, Internet Software Consortium
-           2004, Internet Systems Consortium, Inc. ("ISC")
-           2006-2007, Ivo van Doorn
-           2004, Jacek Caban
-           2012, Jacek Caban for CodeWeavers
-           2007, Jakob Bornecrantz <wallbraker@gmail.com>
-           2016, Jamal Hadi Salim
-           2008, James Hawkins
-           2008, James Hawkins for CodeWeavers
-           1994-2003, Jaroslav Kysela <perex@perex.cz>
-           2015-2019, Jason A. Donenfeld <Jason@zx2c4.com>
-           1995, Jason Downs
-           2002-2003, Jason Edmeades
-           2002-2003, Jason Edmeades Raphael Junqueira
-           2006, Jay Lan, SGI
-           2001, Jay Schulist <jschlst@samba.org>
-           1999, Jeff Hartmann
-           2000, Jens Axboe <axboe@suse.de>
-           1999-2000, Jeremy Fitzhardinge <jeremy@goop.org>
-           2006-2007, Jiri Kosina
-           2016, Jiri Pirko <jiri@mellanox.com>
-           2014-2015, Jiri Pirko <jiri@resnulli.us>
-           2011, Jiri Pirko <jpirko@redhat.com>
-           2005-2007, Jiri Sla <jirisla@gmail.com>
-           2000-2002, Joakim Axelsson <gozem@linux.nu>
-           2006-2010, Johannes Berg <johannes@sipsolutions.net>
-           2010-2011, Jonas Bonn <jonas@southpole.se>
-           1996-2000, Jonathan A. Buzzard <jonathan@buzzard.org.uk>
-           2008-2011, Jonathan Cameron
-           2011, Joonyoung Shim <jy0922.shim@samsung.com>
-           2008, Jouni Malinen <jouni.malinen@atheros.com>
-           2003-2011, Jozsef Kadlecsik <kadlec@netfilter.org>
-           2003-2005, K A Fraser
-           2014, Kai Tietz
-           2007-2008, Karsten Wiese <fzu@wemgehoertderstaat.de>
-           2003-2004, Kevin Thayer <nufan_wfk@yahoo.com>
-           2005-2007, Kristian Hoegsberg <krh@bitplanet.net>
-           2003, Krzysztof Benedyczak & Michal Wronski
-           1999-2005, Krzysztof Halasa <khc@pm.waw.pl>
-           2002, Kyle Martin <mkm@ieee.org>
-           1996, L. Peter Deutsch
-           2009, Laurent Pinchart <laurent.pinchart@skynet.be>
-           2011-2018, License: LGPL-2.1+
-           2015-2016, Linaro Limited
-           2016, Linus Walleij
-           1997-2001, Lucent Technologies
-           2008, Luis Busquets
-           2008, Luis Carlos Cobo <luisca@cozybit.com>
-           2008-2009, Luis R. Rodriguez <lrodriguez@atheros.com>
-           2015, Lyude (Stephen Chandler Paul) <cpaul@redhat.com>
-           2002-2004, MARA Systems AB <https://www.marasystems.com> Henrik Nordstrom <hno@marasystems.com>
-           2006-2009, Maarten Lankhorst
-           2010, Maarten Lankhorst for CodeWeavers
-           2007, Marcel Partap
-           1995-1997, Marco van Wieringen - ELM Consultancy B.V
-           2000-2001, Marcus Metzler <marcus@convergence.de>
-           2000-2002, Martin Josefsson <gandalf@wlug.westbo.se>
-           1997-1999, Martin Mares <mj@ucw.cz>
-           2001, Massimo Dal Zotto <dz@debian.org>
-           2010-2015, Mathieu Desnoyers <mathieu.desnoyers@efficios.com>
-           2003, Matjaz Breskvar <phoenix@bsemi.com>
-           2010, Matteo Bruni for CodeWeavers
-           2016, Maxim Integrated Products
-           1999-2000, Maxim Krasnyansky <max_mk@yahoo.com>
-           2006-2017, Mellanox Technologies
-           2016, Mellanox Technologies Ltd
-           2017-2018, Mellanox Technologies inc
-           2016, Mellanox Technologies, LTD
-           2008, Michael Buesch <m@bues.ch>
-           2013, Michael Ellerman, IBM Corp
-           2015, Michael Müller
-           2008, Michael Wu <flamingice@sourmilk.net>
-           1998-2000, Microgate Corporation
-           2017, Microsemi Corporation
-           2011, Microsoft Corporation
-           1996, Miguel de Icaza
-           2002, Mike Barcroft <mike@FreeBSD.org>
-           2001-2007, Miklos Szeredi
-           2001-2008, Miklos Szeredi <miklos@szeredi.hu>
-           1999-2001, Motorola, Inc
-           1992-1995, NeXT Computer, Inc
-           2007-2017, Nicira, Inc
-           2013, Nikolay Sivov for CodeWeavers
-           2005-2008, Nippon Telegraph and Telephone Corporation
-           2004-2010, Nokia Corporation
-           2008, Novell, Inc
-           2015-2017, Nuxi, https://nuxi.nl
-           2010, OMICRON electronics GmbH
-           1995-1997, Olaf Kirch <okir@monad.swb.de>
-           2018, Oleksandr Andrushchenko, EPAM Systems Inc
-           2005, Oliver Stieber
-           2007, Oracle
-           2010, Oracle America, Inc
-           2008-2018, Oracle and/or its affiliates
-           2000-2001, Ove Kaaven
-           2011-2014, PLUMgrid, http://plumgrid.com
-           2001, PPC64 Team, IBM Corp
-           2005, Palmsource, Inc
-           2005, PathScale, Inc
-           2000-2002, Patrick Schaaf <bof@bof.de>
-           1994-2002, Paul Mackerras
-           2005, Peter Berg Larsen
-           1999-2000, Peter Hunnisett
-           2001-2004, Peter Osterlund <petero2@telia.com>
-           2011, Piotr Caban for CodeWeavers
-           2003, Poul-Henning Kamp
-           1999, Precision Insight, Inc
-           1999-2000, Precision Insight, Inc., Cedar Park, Texas
-           2015, Prodrive Technologies
-           Public Domain
-           2015-2016, QLogic Corporation
-           2006, Qumranet
-           1994-2006, Ralf Baechle
-           1994-2002, Ralf Baechle <ralf@gnu.org>
-           1995-2014, Ralf Baechle <ralf@linux-mips.org>
-           2000-2001, Ralph Metzler <ralph@convergence.de>
-           2002-2005, Raphael Junqueira
-           2015, RapidIO Trade Association
-           2000-2015, Red Hat
-           2008-2010, Red Hat Inc
-           2003-2004, Red Hat Inc., Durham, North Carolina
-           1999-2000, Red Hat Software
-           2001-2020, Red Hat, Inc
-           2012, Red Hat, Inc. Author(s): Jeff Layton <jlayton@redhat.com>
-           2003-2018, Red Hat, Inc. David Howells <dhowells@redhat.com>
-           2008-2011, Red Hat, Inc., Ingo Molnar
-           2004, Red Hat, Inc., James Morris <jmorris@redhat.com>
-           2008-2011, Red Hat, Inc., Peter Zijlstra
-           1982-2012, Regents of the University of California
-           2017, Renesas Electronics Corporation
-           2005-2020, Rich Felker
-           1997-1999, Richard Gooch
-           1992, Rick Sladkey
-           2010, Rico Schüller
-           2003-2004, Robert Reif
-           2005-2009, Rodolfo Giometti <giometti@linux.it>
-           2003-2004, Rok Mandeljc
-           1996-2005, Russell King
-           2012, Russell King With inspiration from the i915 driver
-           2007, Rusty Russell IBM Corporation
-           2001-2003, S3 Graphics, Inc
-           2010, ST-Ericsson AB
-           2006, SWAPP Andrea Paterniani <a.paterniani@swapp-eng.it>
-           2015, Sabrina Dubroca <sd@queasysnail.net>
-           2011, Samsung Electronics Co., Ltd. Authors: Inki Dae <inki.dae@samsung.com>
-           2018, Samuel Mendoza-Jonas, IBM Corporation
-           2015, Seagate Technology PLC
-           2011, Seung-Woo Kim <sw0312.kim@samsung.com>
-           2006, Shailabh Nagar, IBM Corp
-           2017, SiFive, Inc
-           1988-1999, Silicon Graphics
-           1995-2004, Silicon Graphics, Inc
-           1995, Simon "Guru Aleph-Null" Janes NCM: Network and Communications Management, Inc
-           1995-1997, Simon G. Vogl
-           1995-2000, Simon G. Vogl With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>
-           2001-2003, Sistina Software (UK) Limited
-           1997-2003, Sistina Software, Inc
-           2000-2012, Solar Designer
-           1998-2014, Solar Designer and it is here released to the general public under the following terms:
-           2006-2009, Solarflare Communications Inc
-           2006, Sony Computer Entertainment Inc
-           2006-2007, Sony Corporation
-           2015, Stefan Hajnoczi <stefanha@redhat.com>
-           2007, Stefan Kopp, Gechingen, Germany
-           2011, Steffen Klassert <steffen.klassert@secunet.com>
-           2001-2003, Stelian Pop <stelian@popies.net>
-           2005, Stephane Marchesin
-           1984-1995, Stephen L. Moshier
-           2008, Stephen L. Moshier <steve@moshier.net>
-           1984-1992, Stephen L. Moshier Direct inquiries to
-           1994-2001, Stephen Rothwell <sfr@canb.auug.org.au>
-           2008, Steven G. Kargl, David Schultz, Bruce D. Evans
-           1993-2004, Sun Microsystems, Inc
-           2004-2012, Synopsys, Inc. (www.synopsys.com)
-           1999-2000, Takashi Iwai
-           1999, Takashi Iwai <tiwai@suse.de>
-           2011, Texas Instruments
-           2012, Texas Instruments Inc
-           2015, Texas Instruments Incorporated
-           2009-2014, Texas Instruments, Inc
-           2008, The Android Open Source Project
-           2007-2018, The Khronos Group Inc
-           2010-2011, The Linux Foundation
-           1996-2000, The NetBSD Foundation, Inc
-           1980-2018, The Regents of the University of California
-           2002, The Regents of the University of Michigan
-           1992-1998, Theodore Ts'o
-           1993, Theodore Ts'o. Redistribution of this file is permitted under the GNU General Public License
-           This file is part of the GNU C Library
-           2003, Thomas Charbonnel <thomas@undata.org>
-           1999, Thomas Davis <tadavis@lbl.gov>
-           2008-2009, Thomas Gleixner <tglx@linutronix.de>
-           2010-2011, Thomas Graf <tgraf@redhat.com>
-           2000, Thomas Sailer <sailer@ife.ee.ethz.ch>
-           2001-2005, Thomas Winischhofer, Vienna, Austria
-           2006, Thumtronics Pty Ltd. Developed for Thumtronics Grey Innovation Ben Williamson <ben.williamson@greyinnovation.com>
-           2002-2004, Tim J. Robbins
-           1998, Tim Waugh <tim@cyberelk.demon.co.uk>
-           1997-2003, Todd C. Miller <Todd.Miller@courtesan.com>
-           2016, Tom Herbert <tom@herbertland.com>
-           2007-2010, Tony Wasserka
-           2004-2005, Topspin Communications
-           1997, Transmeta Corporation
-           2002, Trond Myklebust
-           2007-2008, Tungsten Graphics, Inc., Cedar Park, TX., USA
-           2002-2003, Tungsten Graphics, Inc., Cedar Park, Texas
-           1992-1993, UNIX International, Inc
-           UNIX System Laboratories, Inc
-           2007, USAGI/WIDE Project
-           1999, Uros Bizjak <uros@kss-loka.si>
-           2000, VA Linux Systems, Inc., Fremont, California
-           2000, VA Linux Systems, Inc., Sunnyvale, California
-           1998-2003, VIA Technologies, Inc
-           2018, VMware
-           2007-2016, VMware, Inc
-           2009-2015, VMware, Inc., Palo Alto, CA., USA
-           2011, Valentin Ochs
-           2007-2010, Vijay Kiran Kamuju
-           2001-2009, Ville Laurikari <vl@iki.fi>
-           2012, Virtual Open Systems and Columbia University
-           1996-2002, Vojtech Pavlik
-           2002-2020, Volkswagen Group Electronic Research
-           2005, Voltaire, Inc
-           2015, WIND S.A
-           2016, Western Digital
-           2019, Western Digital Corporation or its affiliates
-           2005-2011, Wind River Systems
-           2009, Wolfgang Grandegger <wg@grandegger.com>
-           1999, Xi Graphics, Inc
-           2013-2019, Xilinx, Inc
-           2015-2021, Zig Contributors
-           __NO_COPYRIGHT_NOR_LICENSE__
-           __NO_COPYRIGHT__ in: lib/include/arm_fp16.h
-           __NO_COPYRIGHT__ in: lib/include/avx512vlvp2intersectintrin.h
-           __NO_COPYRIGHT__ in: lib/include/avx512vp2intersectintrin.h
-           __NO_COPYRIGHT__ in: lib/include/avxvnniintrin.h
-           __NO_COPYRIGHT__ in: lib/include/cuda_wrappers/algorithm
-           __NO_COPYRIGHT__ in: lib/include/cuda_wrappers/complex
-           __NO_COPYRIGHT__ in: lib/include/cuda_wrappers/new
-           __NO_COPYRIGHT__ in: lib/include/keylockerintrin.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/cifs/cifs_mount.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/connector.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/icmp.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/if_x25.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/netdevice.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/route.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/uinput.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/uleds.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/usb/cdc-wdm.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_9p.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_balloon.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_blk.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_config.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_crypto.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_ids.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_input.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_net.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/linux/virtio_scsi.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/sound/tlv.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-linux-any/xen/gntalloc.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-windows-any/avifmt.h
-           __NO_COPYRIGHT__ in: lib/libc/include/any-windows-any/wmpids.h
-           __NO_COPYRIGHT__ in: lib/libc/mingw/math/cephes_emath.h
-           __NO_COPYRIGHT__ in: lib/libc/mingw/misc/basename.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/misc/dirname.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_fprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_pformat.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_pformat.h
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_printf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_snprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_sprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_vfprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_vprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_vsnprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/mingw/stdio/mingw_vsprintf.c
-           __NO_COPYRIGHT__ in: lib/libc/wasi/LICENSE-MIT
-           details
-           2000-2001, for convergence integrated media GmbH
-           in the header
-           2011, secunet Security Networks AG
-           the Wine project
-           1999-2012, the contributors
-           2009-2013, the mingw-w64 project
-           with the licensecheck(1) command
-License: Apache-2 or BSD-4-clause or Expat or GPL-2.1+ or ISC or LGPL-2.1+ or ZPL-2.1 or public-domain
-
-Files: lib/libc/glibc/LICENSES
-Copyright: 1989-1991, Carnegie Mellon University
-           Craig Metz and are distributed under the following license:
-           1993, Digital Equipment Corporation
-           1992, Eric Young
-           Eric Young:
-           1992-1997, Henry Spencer
-           Henry Spencer:
-           2000, Intel Corporation
-           1996-1999, Internet Software Consortium
-           2010, Oracle America, Inc
-           1991, Regents of the University of California
-           2001, Stephen L. Moshier <moshier@na-net.ornl.gov>
-           Stephen L. Moshier:
-           1993, Sun Microsystems, Inc
-           Sun Microsystems, Inc.:
-           1995, Tom Lord
-           Tom Lord:
-           1997-2003, University of Cambridge
-           University of Cambridge:
-           1998, WIDE Project
-License: BSD-3-clause or ISC or LGPL-2.1+ or MIT/X11 or Spencer-94
 
 Files: lib/libc/include/any-macos-any/netdb.h
 Copyright: 2000-2009, Apple Inc
@@ -3264,82 +2997,394 @@ Copyright: 1998, Softweyr LLC
            1988-1993, The Regents of the University of California
 License: BSD-3-clause
 
+Files:     lib/libc/mingw/crt/pseudo-reloc.c
+Copyright: none
+License:   public-domain
+ THIS SOFTWARE IS NOT COPYRIGHTED
+ .
+ This source code is offered for use in the public domain. You may
+ use, modify or distribute it freely.
+ .
+ This code is distributed in the hope that it will be useful but
+ WITHOUT ANY WARRANTY. ALL WARRANTIES, EXPRESS OR IMPLIED ARE HEREBY
+ DISCLAMED. This includes but is not limited to warranties of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 Files: lib/libc/include/any-linux-any/linux/dqblk_xfs.h
 Copyright: 1995-2004, Silicon Graphics, Inc
 License: LGPL
 
 Files: test/standalone/issue_9812/vendor/kuba-zip/miniz.h
-Copyright: laws, the author or authors
+Copyright: 2013, Rich Geldreich <richgel99@gmail.com>
 License: Unlicense
-
-Files: lib/libcxxabi/LICENSE.TXT
-License: Apache-2 or Expat or NCSA
 
 Files: lib/libc/wasi/dlmalloc/src/malloc.c
 License: CC0
-
-Files: lib/libc/wasi/LICENSE-MIT
-License: Expat
-
-Files: lib/libunwind/LICENSE.TXT
-License: Apache-2 or Expat or NCSA
-
-Files: lib/libcxx/LICENSE.TXT
-License: Apache-2 or Expat or NCSA
-
+  
 Files: debian/*
+Copyright: Nick Hastings <nicholaschastings@gmail.com>
 License: Expat
-Comment: No explicit license found, using license(s) from:
- LICENSE
-
-Files: debian/copyright.byhand
-Copyright: 2007, David Mosberger-Tang
-           2012, Doug Lea
-           FSF
-           2001-2005, Hewlett-Packard Co
-           2009-2019, LLVM Team
-           2022, Nick Hastings <nicholaschastings@gmail.com>
-           2015-2017, Nuxi (https://nuxi.nl/)
-           2005-2020, Rich Felker
-           2015-2022, Zig contributors
-           2018-2020, wasi-libc contributors
-License: Apache-2 or BSD-2-clause or Expat or LGPL-2+
 
 License: APSL-2
-Comment: Add the corresponding license text here
+ This file contains Original Code and/or Modifications of Original
+ Code as defined in and that are subject to the Apple Public Source
+ License Version 2.0 (the 'License'). You may not use this file except
+ in compliance with the License. Please obtain a copy of the License
+ at http://www.opensource.apple.com/apsl/ and read it before using
+ this file.
+ . 
+ The Original Code and all software distributed under the License are
+ distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
+ EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
+ INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR
+ NON-INFRINGEMENT.  Please see the License for the specific language
+ governing rights and limitations under the License.
 
 License: Apache-2
-Comment: Add the corresponding license text here
+ License: Apache-2
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ ․
+    http://www.apache.org/licenses/LICENSE-2.0
+ ․
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ ․
+ On Debian systems, the complete text of the Apache License,
+ Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0".
 
+License: Apache-2 with LLVM exception
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ ․
+    http://www.apache.org/licenses/LICENSE-2.0
+ ․
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ ․
+ On Debian systems, the complete text of the Apache License,
+ Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0". 
+ .
+ As an exception, if, as a result of your compiling your source code,
+ portions of this Software are embedded into an Object form of such
+ source code, you may redistribute such embedded portions in such
+ Object form without complying with the conditions of Sections 4(a),
+ 4(b) and 4(d) of the License.
+ .
+ In addition, if you combine or link compiled forms of this Software with
+ software that is licensed under the GPLv2 ("Combined Software") and if a
+ court of competent jurisdiction determines that the patent provision (Section
+ 3), the indemnity provision (Section 9) or other Section of the License
+ conflicts with the conditions of the GPLv2, you may retroactively and
+ prospectively choose to deem waived or otherwise exclude such Section(s) of
+ the License, but only in their entirety and only with respect to the Combined
+ Software.
+ 
 License: BSD
-Comment: Add the corresponding license text here
+ Access and use of this software shall impose the following
+ obligations and understandings on the user. The user is granted the
+ right, without any fee or cost, to use, copy, modify, alter, enhance
+ and distribute this software, and any derivative works thereof, and
+ its supporting documentation for any purpose whatsoever, provided
+ that this entire notice appears in all copies of the software,
+ derivative works and supporting documentation.  Further, UCAR
+ requests that the user credit UCAR/Unidata in any publications that
+ result from the use of this software or in any product that includes
+ this software. The names UCAR and/or Unidata, however, may not be
+ used in any advertising or publicity to endorse or promote any
+ products or commercial entity unless specific written permission is
+ obtained from UCAR/Unidata. The user also understands that
+ UCAR/Unidata is not obligated to provide the user with any support,
+ consulting, training or assistance of any kind with regard to the
+ use, operation and performance of this software nor to provide the
+ user with any updates, revisions, new versions or "bug fixes."
+ .
+ THIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA "AS IS" AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL UCAR/UNIDATA BE LIABLE FOR ANY
+ SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+ RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+ CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
 
 License: BSD-2-clause
-Comment: Add the corresponding license text here
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
 
 License: BSD-2-clause-NetBSD
-Comment: Add the corresponding license text here
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
 
 License: BSD-3-clause
-Comment: Add the corresponding license text here
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above
+    copyright notice, this list of conditions and the following
+    disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
 
 License: BSD-4-clause
-Comment: Add the corresponding license text here
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software must
+    display the following acknowledgement:
+      This product includes software developed by this project.
+ 4. Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY COPYRIGHT HOLDER "AS IS" AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+ IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 License: CC0
-Comment: Add the corresponding license text here
+ Statement of Purpose
+ .
+ The laws of most jurisdictions throughout the world automatically confer
+ exclusive Copyright and Related Rights (defined below) upon the creator and
+ subsequent owner(s) (each and all, an "owner") of an original work of
+ authorship and/or a database (each, a "Work").
+ .
+ Certain owners wish to permanently relinquish those rights to a Work for the
+ purpose of contributing to a commons of creative, cultural and scientific
+ works ("Commons") that the public can reliably and without fear of later
+ claims of infringement build upon, modify, incorporate in other works, reuse
+ and redistribute as freely as possible in any form whatsoever and for any
+ purposes, including without limitation commercial purposes. These owners may
+ contribute to the Commons to promote the ideal of a free culture and the
+ further production of creative, cultural and scientific works, or to gain
+ reputation or greater distribution for their Work in part through the use and
+ efforts of others.
+ .
+ For these and/or other purposes and motivations, and without any expectation
+ of additional consideration or compensation, the person associating CC0 with a
+ Work (the "Affirmer"), to the extent that he or she is an owner of Copyright
+ and Related Rights in the Work, voluntarily elects to apply CC0 to the Work
+ and publicly distribute the Work under its terms, with knowledge of his or her
+ Copyright and Related Rights in the Work and the meaning and intended legal
+ effect of CC0 on those rights.
+ .
+ 1. Copyright and Related Rights. A Work made available under CC0 may be
+ protected by copyright and related or neighboring rights ("Copyright and
+ Related Rights"). Copyright and Related Rights include, but are not limited
+ to, the following:
+ .
+     the right to reproduce, adapt, distribute, perform, display, communicate,
+     and translate a Work;
+ .
+     moral rights retained by the original author(s) and/or performer(s);
+ .
+     publicity and privacy rights pertaining to a person's image or likeness
+     depicted in a Work;
+ .
+     rights protecting against unfair competition in regards to a Work, subject
+     to the limitations in paragraph 4(a), below;
+ .
+     rights protecting the extraction, dissemination, use and reuse of data in
+     a Work;
+ .
+     database rights (such as those arising under Directive 96/9/EC of the
+     European Parliament and of the Council of 11 March 1996 on the legal
+     protection of databases, and under any national implementation thereof,
+     including any amended or successor version of such directive); and
+ .
+     other similar, equivalent or corresponding rights throughout the world
+     based on applicable law or treaty, and any national implementations
+     thereof.
+ .
+ 2. Waiver. To the greatest extent permitted by, but not in contravention of,
+ applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and
+ unconditionally waives, abandons, and surrenders all of Affirmer's Copyright
+ and Related Rights and associated claims and causes of action, whether now
+ known or unknown (including existing as well as future claims and causes of
+ action), in the Work (i) in all territories worldwide, (ii) for the maximum
+ duration provided by applicable law or treaty (including future time
+ extensions), (iii) in any current or future medium and for any number of
+ copies, and (iv) for any purpose whatsoever, including without limitation
+ commercial, advertising or promotional purposes (the "Waiver"). Affirmer makes
+ the Waiver for the benefit of each member of the public at large and to the
+ detriment of Affirmer's heirs and successors, fully intending that such Waiver
+ shall not be subject to revocation, rescission, cancellation, termination, or
+ any other legal or equitable action to disrupt the quiet enjoyment of the Work
+ by the public as contemplated by Affirmer's express Statement of Purpose.
+ .
+ 3. Public License Fallback. Should any part of the Waiver for any reason be
+ judged legally invalid or ineffective under applicable law, then the Waiver
+ shall be preserved to the maximum extent permitted taking into account
+ Affirmer's express Statement of Purpose. In addition, to the extent the Waiver
+ is so judged Affirmer hereby grants to each affected person a royalty-free,
+ non transferable, non sublicensable, non exclusive, irrevocable and
+ unconditional license to exercise Affirmer's Copyright and Related Rights in
+ the Work (i) in all territories worldwide, (ii) for the maximum duration
+ provided by applicable law or treaty (including future time extensions), (iii)
+ in any current or future medium and for any number of copies, and (iv) for any
+ purpose whatsoever, including without limitation commercial, advertising or
+ promotional purposes (the "License"). The License shall be deemed effective as
+ of the date CC0 was applied by Affirmer to the Work. Should any part of the
+ License for any reason be judged legally invalid or ineffective under
+ applicable law, such partial invalidity or ineffectiveness shall not
+ invalidate the remainder of the License, and in such case Affirmer hereby
+ affirms that he or she will not (i) exercise any of his or her remaining
+ Copyright and Related Rights in the Work or (ii) assert any associated claims
+ and causes of action with respect to the Work, in either case contrary to
+ Affirmer's express Statement of Purpose.
+ .
+ 4. Limitations and Disclaimers.
+ .
+     No trademark or patent rights held by Affirmer are waived, abandoned,
+     surrendered, licensed or otherwise affected by this document.
+ .
+     Affirmer offers the Work as-is and makes no representations or warranties
+     of any kind concerning the Work, express, implied, statutory or otherwise,
+     including without limitation warranties of title, merchantability, fitness
+     for a particular purpose, non infringement, or the absence of latent or
+      other defects, accuracy, or the present or absence of errors, whether or
+      not discoverable, all to the greatest extent permissible under applicable
+      law.
+ .
+     Affirmer disclaims responsibility for clearing rights of other persons
+     that may apply to the Work or any use thereof, including without
+     limitation any person's Copyright and Related Rights in the Work. Further,
+     Affirmer disclaims responsibility for obtaining any necessary consents,
+     permissions or other rights required for any use of the Work.
+ .
+     Affirmer understands and acknowledges that Creative Commons is not a party
+     to this document and has no duty or obligation with respect to this CC0 or
+     use of the Work.
 
 License: Expat
-Comment: Add the corresponding license text here
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
 
 License: GPL
 Comment: Add the corresponding license text here
 
 License: GPL-2
-Comment: Add the corresponding license text here
-
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ 
 License: GPL-2+
-Comment: Add the corresponding license text here
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 License: GPL-2.1+
 Comment: Add the corresponding license text here
@@ -3351,7 +3396,34 @@ License: LGPL
 Comment: Add the corresponding license text here
 
 License: LGPL-2+
-Comment: Add the corresponding license text here
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: Apache-2
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ ․
+    http://www.apache.org/licenses/LICENSE-2.0
+ ․
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ ․
+ On Debian systems, the complete text of the Apache License,
+ Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0".
 
 License: LGPL-2.1
 Comment: Add the corresponding license text here
@@ -3369,11 +3441,62 @@ License: Spencer-94
 Comment: Add the corresponding license text here
 
 License: Unlicense
-Comment: Add the corresponding license text here
+ This is free and unencumbered software released into the public domain.
+ .
+ Anyone is free to copy, modify, publish, use, compile, sell, or
+ distribute this software, either in source code form or as a compiled
+ binary, for any purpose, commercial or non-commercial, and by any
+ means.
+ .
+ In jurisdictions that recognize copyright laws, the author or authors
+ of this software dedicate any and all copyright interest in the
+ software to the public domain. We make this dedication for the benefit
+ of the public at large and to the detriment of our heirs and
+ successors. We intend this dedication to be an overt act of
+ relinquishment in perpetuity of all present and future rights to this
+ software under copyright law.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
 
 License: ZPL-2.1
-Comment: Add the corresponding license text here
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions in source code must retain the accompanying copyright
+    notice, this list of conditions, and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the accompanying
+    copyright notice, this list of conditions, and the following disclaimer
+    in the documentation and/or other materials provided with the
+    distribution.
+ 3. Names of the copyright holders must not be used to endorse or promote
+    products derived from this software without prior written permission
+    from the copyright holders.
+ 4. The right to distribute this software or to use it for any purpose does
+    not give you the right to use Servicemarks (sm) or Trademarks (tm) of
+    the copyright holders.  Use of them is covered by separate agreement
+    with the copyright holders.
+ 5. If any files are modified, you must cause the modified files to carry
+    prominent notices stating that you changed the files and the date of
+    any change.
+ .
+ Disclaimer
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ Comment: Add the corresponding license text here
 
-License: public-domain
-Comment: Add the corresponding license text here
 
