@@ -7,6 +7,36 @@ Files: *
 Copyright: 2015-2021, Zig Contributors
 License: Expat
 
+Files: lib/include/*
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+License: APACHE-2-LLVM-EXCEPTIONS
+
+Files: lib/include/arm_fp16.h
+Files: lib/include/arm_neon.h
+Files: lib/include/avx512vlvp2intersectintrin.h
+Files: lib/include/avx512vp2intersectintrin.h
+Files: lib/include/avxvnniintrin.h
+Files: lib/include/keylockerintrin.h
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+License: Expat
+
+Files: lib/include/hexagon_types.h
+Copyright: (c) 2020 Qualcomm Innovation Center, Inc. All rights reserved.
+License: APACHE-2-LLVM-EXCEPTIONS?
+Commment: No license in file.
+
+NCH: lib/include  DONE
+
+Files: lib/libcxx/*
+License: APACHE-2-LLVM-EXCEPTIONS
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+
+Files: lib/libcxx/src/support/solaris/wcsnrtombs.inc
+       lib/libcxx/src/support/solaris/mbsnrtowcs.inc
+Copyright: 2002-2004 Tim J. Robbins
+License: BSD-2-Clause
+
+NCH: lib/libcxx DONE
 
 Files: lib/*
 Copyright: & Marcus Metzler <marcus@convergence.de>
@@ -236,7 +266,7 @@ Copyright: 2012-2020, Arm Limited
            1998-2014, Solar Designer and it is hereby released to the
            2008, Steven G. Kargl, David Schultz, Bruce D. Evans
            1993-2004, Sun Microsystems, Inc
-License: Apache-2 and Expat and Apache-2 with LLVM exception
+License: Apache-2 and Expat and APACHE-2-LLVM-EXCEPTIONS
 
 Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/aarch64-linux-gnu/bits/fenv.h
@@ -1489,12 +1519,6 @@ Comment: No explicit license found, using license(s) from:
 
 
 
-Files: lib/libcxx/*
-Copyright: ) : c
-           __l
-License: Apache-2 or Expat or NCSA
-Comment: No explicit license found, using license(s) from:
- lib/libcxx/LICENSE.TXT
 
 Files: lib/libc/glibc/*
 Copyright: Explicit lists of free routines to call or objects to free
@@ -2036,6 +2060,8 @@ Files: lib/libc/glibc/abilists
 License: BSD-3-clause or ISC or LGPL-2.1+ or MIT/X11 or Spencer-94
 Comment: No explicit license found, using license(s) from:
  lib/libc/glibc/LICENSES
+FIXME: Can not find where decopy pullsed "Spencer-94" from. "Henry
+Spencer" is mentioned in LICENSES file though
 
 Files: lib/libc/include/aarch64-linux-any/asm/auxvec.h
        lib/libc/include/aarch64-linux-any/asm/bitsperlong.h
@@ -2391,13 +2417,6 @@ Copyright: 2004-2005, David M. Gay
 License: MIT/X11
 
 Files: LICENSE
-       lib/include/arm_fp16.h
-       lib/include/arm_neon.h
-       lib/include/avx512vlvp2intersectintrin.h
-       lib/include/avx512vp2intersectintrin.h
-       lib/include/avxvnniintrin.h
-       lib/include/cuda_wrappers/*
-       lib/include/keylockerintrin.h
        lib/libc/include/any-linux-any/drm/amdgpu_drm.h
        lib/libc/include/any-linux-any/drm/drm_mode.h
        lib/libc/include/any-linux-any/linux/agpgart.h
@@ -2638,12 +2657,12 @@ Files: lib/libc/include/any-linux-any/xen/gntalloc.h
 Copyright: none
 License: public-domain
  This file is in the public domain.
- 
+
 Files: lib/libc/include/any-windows-any/sdkddkver.h
 Copyright: none
 License: public-domain
  This file has no copyright assigned and is placed in the Public Domain.
- 
+
 Files:     lib/libc/mingw/misc/dirent.c
 Copyright: none
 License:   public-domain
@@ -3020,7 +3039,7 @@ License: Unlicense
 
 Files: lib/libc/wasi/dlmalloc/src/malloc.c
 License: CC0
-  
+
 Files: debian/*
 Copyright: Nick Hastings <nicholaschastings@gmail.com>
 License: Expat
@@ -3032,7 +3051,7 @@ License: APSL-2
  in compliance with the License. Please obtain a copy of the License
  at http://www.opensource.apple.com/apsl/ and read it before using
  this file.
- . 
+ .
  The Original Code and all software distributed under the License are
  distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
  EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
@@ -3058,7 +3077,7 @@ License: Apache-2
  On Debian systems, the complete text of the Apache License,
  Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0".
 
-License: Apache-2 with LLVM exception
+License: APACHE-2-LLVM-EXCEPTIONS
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
@@ -3072,7 +3091,7 @@ License: Apache-2 with LLVM exception
  limitations under the License.
  ․
  On Debian systems, the complete text of the Apache License,
- Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0". 
+ Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0".
  .
  As an exception, if, as a result of your compiling your source code,
  portions of this Software are embedded into an Object form of such
@@ -3088,7 +3107,7 @@ License: Apache-2 with LLVM exception
  prospectively choose to deem waived or otherwise exclude such Section(s) of
  the License, but only in their entirety and only with respect to the Combined
  Software.
- 
+
 License: BSD
  Access and use of this software shall impose the following
  obligations and understandings on the user. The user is granted the
@@ -3364,7 +3383,7 @@ License: GPL-2
  .
  On Debian systems, the complete text of the GNU General Public
  License version 2 can be found in "/usr/share/common-licenses/GPL-2".
- 
+
 License: GPL-2+
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
@@ -3492,11 +3511,8 @@ License: ZPL-2.1
  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
  EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT,
  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
  OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- Comment: Add the corresponding license text here
-
-
