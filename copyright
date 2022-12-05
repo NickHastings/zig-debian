@@ -7,37 +7,6 @@ Files: *
 Copyright: 2015-2021, Zig Contributors
 License: Expat
 
-Files: lib/include/*
-Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
-License: APACHE-2-LLVM-EXCEPTIONS
-
-Files: lib/include/arm_fp16.h
-Files: lib/include/arm_neon.h
-Files: lib/include/avx512vlvp2intersectintrin.h
-Files: lib/include/avx512vp2intersectintrin.h
-Files: lib/include/avxvnniintrin.h
-Files: lib/include/keylockerintrin.h
-Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
-License: Expat
-
-Files: lib/include/hexagon_types.h
-Copyright: (c) 2020 Qualcomm Innovation Center, Inc. All rights reserved.
-License: APACHE-2-LLVM-EXCEPTIONS?
-Commment: No license in file.
-
-NCH: lib/include  DONE
-
-Files: lib/libcxx/*
-License: APACHE-2-LLVM-EXCEPTIONS
-Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
-
-Files: lib/libcxx/src/support/solaris/wcsnrtombs.inc
-       lib/libcxx/src/support/solaris/mbsnrtowcs.inc
-Copyright: 2002-2004 Tim J. Robbins
-License: BSD-2-Clause
-
-NCH: lib/libcxx DONE
-
 Files: lib/*
 Copyright: & Marcus Metzler <marcus@convergence.de>
            1996, ACN S.A
@@ -196,8 +165,8 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            2012-2015, Regents of the University of California
            1992, Rick Sladkey
            2017, Rockchip Electronics Co., Ltd
-           1998, Rusty Russell -- This code is GPL
-           2002, Rusty Russell IBM -- This code is GPL
+           1998, Rusty Russell
+           2002, Rusty Russell IBM
            2005, SPARTA, Inc
            2010, ST-Ericsson AB
            2011-2013, Samsung India Software Operations
@@ -248,6 +217,29 @@ Copyright: & Marcus Metzler <marcus@convergence.de>
            Yaniv Kamay <yaniv@qumranet.com>
 License: Expat
 
+Files: lib/include/*
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+License: APACHE-2-LLVM-EXCEPTIONS
+
+Files: lib/include/arm_fp16.h
+       lib/include/arm_neon.h
+       lib/include/avx512vlvp2intersectintrin.h
+       lib/include/avx512vp2intersectintrin.h
+       lib/include/avxvnniintrin.h
+       lib/include/keylockerintrin.h
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+License: Expat
+
+Files: lib/libcxx/*
+License: APACHE-2-LLVM-EXCEPTIONS
+Copyright: 2003-2017 University of Illinois at Urbana-Champaign.
+
+Files: lib/libcxx/src/support/solaris/wcsnrtombs.inc
+       lib/libcxx/src/support/solaris/mbsnrtowcs.inc
+Copyright: 2002-2004 Tim J. Robbins
+License: BSD-2-Clause
+
+
 Files: lib/libc/musl/*
 Copyright: 2012-2020, Arm Limited
            2009-2011, Bruce D. Evans, Steven G. Kargl, David Schultz
@@ -256,17 +248,7 @@ Copyright: 2012-2020, Arm Limited
            2008, Steven G. Kargl, David Schultz, Bruce D. Evans
            1993-2004, Sun Microsystems, Inc
 License: Expat
-Comment: No explicit license found, using license(s) from: lib/libc/musl/COPYRIGHT
-FIXME: COPYRIGHT file has a lont list of "Authors/contributors include"
-
-Files: lib/libc/wasi/*
-Copyright: 2012-2020, Arm Limited
-           2009-2011, Bruce D. Evans, Steven G. Kargl, David Schultz
-           2011-2012, Nicholas J. Kain, licensed under standard MIT license
-           1998-2014, Solar Designer and it is hereby released to the
-           2008, Steven G. Kargl, David Schultz, Bruce D. Evans
-           1993-2004, Sun Microsystems, Inc
-License: Apache-2 and Expat and APACHE-2-LLVM-EXCEPTIONS
+Comment: COPYRIGHT file has a lont list of "Authors/contributors include". Should these be added here in some way?
 
 Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/aarch64-linux-gnu/bits/fenv.h
@@ -1517,12 +1499,8 @@ License: ZPL-2.1
 Comment: No explicit license found, using license(s) from:
  lib/libc/mingw/COPYING
 
-
-
-
 Files: lib/libc/glibc/*
-Copyright: Explicit lists of free routines to call or objects to free
-           1991-2021, Free Software Foundation, Inc
+Copyright: 1991-2021, Free Software Foundation, Inc
            2011-2018, This file is part of the GNU C Library
 License: LGPL-2.1+
 
@@ -2058,10 +2036,9 @@ Files: lib/libc/glibc/abilists
        lib/libc/glibc/sysdeps/x86_64/x32/symbol-hacks.h
        lib/libc/glibc/time/*
 License: BSD-3-clause or ISC or LGPL-2.1+ or MIT/X11 or Spencer-94
+Copyright: 1991-2021, Free Software Foundation, Inc
 Comment: No explicit license found, using license(s) from:
  lib/libc/glibc/LICENSES
-FIXME: Can not find where decopy pullsed "Spencer-94" from. "Henry
-Spencer" is mentioned in LICENSES file though
 
 Files: lib/libc/include/aarch64-linux-any/asm/auxvec.h
        lib/libc/include/aarch64-linux-any/asm/bitsperlong.h
@@ -2207,11 +2184,57 @@ Copyright: 2012-2013, ARM Ltd
            2013-2015, Xilinx, Inc
 License: GPL-2
 
-Files: lib/libc/wasi/libc-bottom-half/*
-Copyright: 2015-2017, Nuxi, https://nuxi.nl
-License: BSD-2-clause
-Comment: No explicit license found, using license(s) from:
- lib/libc/wasi/libc-bottom-half/cloudlibc/LICENSE
+Files: lib/libc/wasi/*
+Copyright: 2012-2020, Arm Limited
+           2009-2011, Bruce D. Evans, Steven G. Kargl, David Schultz
+           2011-2012, Nicholas J. Kain, licensed under standard MIT license
+           1998-2014, Solar Designer and it is hereby released to the
+           2008, Steven G. Kargl, David Schultz, Bruce D. Evans
+           1993-2004, Sun Microsystems, Inc
+License: Apache-2 and Expat and APACHE-2-LLVM-EXCEPTIONS
+
+Files: lib/libc/wasi/dlmalloc/*
+Copyright: 2012, Doug Lea
+License: CC0
+
+Files: lib/libc/wasi/libc-bottom-half/clocks/*
+       lib/libc/wasi/libc-bottom-half/crt/*
+       lib/libc/wasi/libc-bottom-half/getpid/*
+       lib/libc/wasi/libc-bottom-half/headers/*
+       lib/libc/wasi/libc-bottom-half/mman/*
+       lib/libc/wasi/libc-bottom-half/signal/*
+       lib/libc/wasi/libc-bottom-half/sources/*
+       lib/libc/wasi/libc-top-half/headers/*
+       lib/libc/wasi/libc-top-half/sources/*
+Copyright: 2011, ARM Ltd
+           2009-2011, Amit Shah <amit.shah@redhat.com>
+           2000-2005, Apple Computer, Inc
+           2005-2009, Apple Inc
+           2013, Asias He <asias@redhat.com>
+           1989, Carnegie Mellon University
+           2003-2016, Ericsson AB
+           2008-2011, Freescale Semiconductor, Inc
+           2007, IBM Corp
+           2015-2016, Integrated Device Technology Inc
+           2014-2020, Intel Corporation
+           1995, NeXT Computer, Inc
+           2010, Oracle America, Inc
+           1997, Peter Wemm <peter@freebsd.org>
+           2015, Prodrive Technologies
+           2015, RapidIO Trade Association
+           2009-2020, Red Hat, Inc
+           1982-1986, Regents of the University of California
+           2007, Rusty Russell IBM Corporation
+           2015, Stefan Hajnoczi <stefanha@redhat.com>
+           2015, Texas Instruments Incorporated
+           1980-1993, The Regents of the University of California
+           2002, The Regents of the University of Michigan
+           1996-1998, Theodore Ts'o
+           1997, Todd C. Miller <Todd.Miller@courtesan.com>
+           UNIX System Laboratories, Inc
+           2002-2020, Volkswagen Group Electronic Research
+           2005-2011, Wind River Systems
+License: Apache-2 or Expat
 
 Files: lib/libc/include/any-linux-any/linux/can.h
        lib/libc/include/any-linux-any/linux/can/bcm.h
@@ -2303,23 +2326,6 @@ Copyright: 2011, ARM Ltd
            2005-2011, Wind River Systems
 License: BSD-3-clause
 
-Files: lib/libc/wasi/LICENSE
-       lib/libc/wasi/dlmalloc/*
-       lib/libc/wasi/libc-bottom-half/clocks/*
-       lib/libc/wasi/libc-bottom-half/crt/*
-       lib/libc/wasi/libc-bottom-half/getpid/*
-       lib/libc/wasi/libc-bottom-half/headers/*
-       lib/libc/wasi/libc-bottom-half/mman/*
-       lib/libc/wasi/libc-bottom-half/signal/*
-       lib/libc/wasi/libc-bottom-half/sources/*
-       lib/libc/wasi/libc-top-half/headers/*
-       lib/libc/wasi/libc-top-half/sources/*
-License: Apache-2 or Expat
-Comment: No explicit license found, using license(s) from:
- lib/libc/wasi/LICENSE-APACHE
- lib/libc/wasi/LICENSE-APACHE-LLVM
- lib/libc/wasi/LICENSE-MIT
-
 Files: lib/libc/include/any-macos-any/dispatch/*
        lib/libc/include/any-macos-any/os/availability.h
        lib/libc/include/any-macos-any/os/lock.h
@@ -2339,6 +2345,7 @@ License: Apache-2
 
 Files: lib/libcxxabi/*
 License: Apache-2 or Expat or NCSA
+Copyright: LLVM Project
 Comment: No explicit license found, using license(s) from:
  lib/libcxxabi/LICENSE.TXT
 
@@ -2378,7 +2385,6 @@ Copyright: 1998, Apple Compter, Inc
            1988-1994, The Regents of the University of California
            UNIX System Laboratories, Inc
            2001-2009, Ville Laurikari <vl@iki.fi>
-           p) :
 License: APSL-2 or BSD-4-clause
 
 Files: lib/libunwind/*
@@ -2416,8 +2422,7 @@ Copyright: 2004-2005, David M. Gay
            1997-2001, Lucent Technologies
 License: MIT/X11
 
-Files: LICENSE
-       lib/libc/include/any-linux-any/drm/amdgpu_drm.h
+Files: lib/libc/include/any-linux-any/drm/amdgpu_drm.h
        lib/libc/include/any-linux-any/drm/drm_mode.h
        lib/libc/include/any-linux-any/linux/agpgart.h
        lib/libc/include/any-linux-any/linux/kfd_ioctl.h
@@ -2873,25 +2878,21 @@ Copyright: 2006, Balbir Singh, IBM Corp
            2006, Shailabh Nagar, IBM Corp
 License: LGPL-2.1
 
-
-FIXME: The following four files all start with the line:
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-but text just looks like gpl-2
 Files: lib/libc/include/any-linux-any/linux/btrfs.h
 Copyright: 2007, Oracle
-License: GPL-2
+License: GPL-2 with Linux-syscall-note exception
 
 Files: lib/libc/include/any-linux-any/linux/edd.h
 Copyright: 2002-2004, Dell Inc
-License: GPL-2
+License: GPL-2 with Linux-syscall-note exception
 
 Files: lib/libc/include/any-linux-any/linux/nbd-netlink.h
 Copyright: 2017, Facebook
-License: GPL-2
+License: GPL-2 with Linux-syscall-note exception
 
 Files: lib/libc/include/any-linux-any/linux/udf_fs_i.h
 Copyright: Unknown
-License: GPL-2
+License: GPL-2 with Linux-syscall-note exception
 
 Files: lib/libc/include/any-windows-any/vsstyle.h
        lib/libc/include/any-windows-any/vssym32.h
@@ -2960,11 +2961,6 @@ Copyright: 1996-1999, Internet Software Consortium
            1983-1993, The Regents of the University of California
 License: BSD-3-clause or ISC
 
-Files: lib/libcxx/src/support/solaris/mbsnrtowcs.inc
-       lib/libcxx/src/support/solaris/wcsnrtombs.inc
-Copyright: 2002-2004, Tim J. Robbins
-License: BSD-2-clause
-
 Files: lib/libc/include/any-macos-any/netdb.h
 Copyright: 2000-2009, Apple Inc
            1993, Digital Equipment Corporation
@@ -2994,7 +2990,7 @@ License: APSL-2 or BSD-3-clause
 Files: lib/libc/include/any-macos-any/wordexp.h
 Copyright: 1994, University Corporation for Atmospheric Research
            1995-2002, University Corporation for Atmospheric Research/Unidata
-License: BSD
+License: NetCDF
 
 Files: lib/libc/include/any-macos-any/__wctype.h
 Copyright: 2017, Apple Inc
@@ -3016,29 +3012,13 @@ Copyright: 1998, Softweyr LLC
            1988-1993, The Regents of the University of California
 License: BSD-3-clause
 
-Files:     lib/libc/mingw/crt/pseudo-reloc.c
-Copyright: none
-License:   public-domain
- THIS SOFTWARE IS NOT COPYRIGHTED
- .
- This source code is offered for use in the public domain. You may
- use, modify or distribute it freely.
- .
- This code is distributed in the hope that it will be useful but
- WITHOUT ANY WARRANTY. ALL WARRANTIES, EXPRESS OR IMPLIED ARE HEREBY
- DISCLAMED. This includes but is not limited to warranties of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
 Files: lib/libc/include/any-linux-any/linux/dqblk_xfs.h
 Copyright: 1995-2004, Silicon Graphics, Inc
-License: LGPL
+License: LGPL-2.1+
 
 Files: test/standalone/issue_9812/vendor/kuba-zip/miniz.h
 Copyright: 2013, Rich Geldreich <richgel99@gmail.com>
 License: Unlicense
-
-Files: lib/libc/wasi/dlmalloc/src/malloc.c
-License: CC0
 
 Files: debian/*
 Copyright: Nick Hastings <nicholaschastings@gmail.com>
@@ -3061,7 +3041,6 @@ License: APSL-2
  governing rights and limitations under the License.
 
 License: Apache-2
- License: Apache-2
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
@@ -3108,7 +3087,7 @@ License: APACHE-2-LLVM-EXCEPTIONS
  the License, but only in their entirety and only with respect to the Combined
  Software.
 
-License: BSD
+License: NetCDF
  Access and use of this software shall impose the following
  obligations and understandings on the user. The user is granted the
  right, without any fee or cost, to use, copy, modify, alter, enhance
@@ -3365,9 +3344,6 @@ License: Expat
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
 
-License: GPL
-Comment: Add the corresponding license text here
-
 License: GPL-2
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -3383,6 +3359,37 @@ License: GPL-2
  .
  On Debian systems, the complete text of the GNU General Public
  License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2 with Linux-syscall-note exception
+ NOTE! This copyright does *not* cover user programs that use kernel services
+ by normal system calls - this is merely considered normal use of the kernel,
+ and does *not* fall under the heading of "derived work". Also note that the
+ GPL below is copyrighted by the Free Software Foundation, but the instance of
+ code that it refers to (the Linux kernel) is copyrighted by me and others who
+ actually wrote it.
+ .
+ Also note that the only valid version of the GPL as far as the kernel is
+ concerned is _this_ particular version of the license (ie v2, not v2.2 or v3.x
+ or whatever), unless explicitly otherwise stated.
+ .
+ Linus Torvalds
+ .
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian and systems the full text of the GNU General Public
+ License version 2 can be found in the file
+ "/usr/share/common-licenses/GPL-2"
 
 License: GPL-2+
  This program is free software; you can redistribute it
@@ -3405,14 +3412,21 @@ License: GPL-2+
  On Debian systems, the full text of the GNU General Public License
  version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-License: GPL-2.1+
-Comment: Add the corresponding license text here
-
 License: ISC
-Comment: Add the corresponding license text here
-
-License: LGPL
-Comment: Add the corresponding license text here
+ Permission to use, copy, modify, and /or distribute this software for
+ any purpose with or without fee is hereby granted, provided that the
+ above copyright notice and this permission notice appear in all
+ copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+Comment: Text from: https://spdx.org/licenses/ISC.html
 
 License: LGPL-2+
  This library is free software; you can redistribute it and/or
@@ -3428,36 +3442,118 @@ License: LGPL-2+
  On Debian systems, the complete text of the GNU Lesser General Public
  License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
-License: Apache-2
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- ․
-    http://www.apache.org/licenses/LICENSE-2.0
- ․
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
- ․
- On Debian systems, the complete text of the Apache License,
- Version 2.0 can be found in "/usr/share/common-licenses/Apache-2.0".
-
 License: LGPL-2.1
-Comment: Add the corresponding license text here
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; version 2.1.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ '/usr/share/common-licenses/LGPL-2.1'.
+Comment: Text from: https://spdx.org/licenses/LGPL-2.1-only.html
 
 License: LGPL-2.1+
-Comment: Add the corresponding license text here
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 2.1 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ '/usr/share/common-licenses/LGPL-2.1'.
+Comment: Text from: https://spdx.org/licenses/LGPL-2.1-or-later.html
 
 License: MIT/X11
-Comment: Add the corresponding license text here
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name(s) of the above
+ copyright holders shall not be used in advertising or otherwise to
+ promote the sale, use or other dealings in this Software without
+ prior written authorization.
+Comment: Text from: https://spdx.org/licenses/X11.html
 
 License: NCSA
-Comment: Add the corresponding license text here
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal with the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimers.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimers in the
+   documentation and/or other materials provided with the distribution.
+ .
+ * Neither the names of the LLVM Team, University of Illinois at
+   Urbana-Champaign, nor the names of its contributors may be used to
+   endorse or promote products derived from this Software without specific
+   prior written permission.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ MPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+ SOFTWARE.
+Comment: Text from: lib/libcxxabi/LICENSE.TXT
 
 License: Spencer-94
-Comment: Add the corresponding license text here
+ Permission is granted to anyone to use this software for any purpose
+ on any computer system, and to alter it and redistribute it, subject
+ to the following restrictions:
+ .
+ 1. The author is not responsible for the consequences of use of this
+    software, no matter how awful, even if they arise from flaws in it.
+ 2. The origin of this software must not be misrepresented, either by
+    explicit claim or by omission.  Since few users ever read sources,
+    credits must appear in the documentation.
+ 3. Altered versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.  Since few users
+    ever read sources, credits must appear in the documentation.
+ 4. This notice may not be removed or altered.
+Comment: Text from lib/libc/glibc/LICENSES
 
 License: Unlicense
  This is free and unencumbered software released into the public domain.
