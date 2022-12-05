@@ -1,16 +1,16 @@
-zig (0.9.1-1) unstable; urgency=medium
+zig (0.9.1-1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
  -- Nick Hastings <nicholaschastings@gmail.com>  Sun, 20 Feb 2022 09:41:26 +0900
 
-zig (0.9.0-1) unstable; urgency=medium
+zig (0.9.0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
  -- Nick Hastings <nicholaschastings@gmail.com>  Wed, 05 Jan 2022 10:25:38 +0900
 
-zig (0.8.1-1) unstable; urgency=low
+zig (0.8.1-1) UNRELEASED; urgency=low
 
   * Initial packaging (Closes: #995670).
 
