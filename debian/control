@@ -9,8 +9,8 @@ Build-Depends: cmake, debhelper-compat (= 13), gcc (>= 7.0.0),
  liblld-13-dev,
 Standards-Version: 4.6.0.1
 Rules-Requires-Root: no
-Vcs-Browser: https://github.com/NickHastings/zig-debian
-Vcs-Git: https://github.com/NickHastings/zig-debian.git
+Vcs-Browser: https://salsa.debian.org/nickh/zig
+Vcs-Git: https://salsa.debian.org/nickh/zig.git
 Homepage: https://github.com/ziglang/zig
 
 Package: zig
