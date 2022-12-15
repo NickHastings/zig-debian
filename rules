@@ -1,5 +1,4 @@
 #!/usr/bin/make -f
-CMAKE_BUILD_TYPE=$(Release)
 # toolchain and stage2 tests are currently failing so can't just run "zig build test"
 # Have asked about it on zig IRC
 TESTS = fmt behavior compiler-rt minilibc compare-output standalone stack-traces cli asm-link runtime-safety translate-c run-translated-c std
