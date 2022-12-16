@@ -1,7 +1,8 @@
 #!/usr/bin/make -f
-# toolchain and stage2 tests are currently failing so can't just run "zig build test"
-# Have asked about it on zig IRC
-TESTS = fmt behavior compiler-rt minilibc compare-output standalone stack-traces cli asm-link runtime-safety translate-c run-translated-c std
+include /usr/share/dpkg/architecture.mk
+
+# Can't just run "zig build test" because test-std fails
+TESTS = fmt behavior compiler-rt minilibc compare-output standalone stack-traces cli asm-link runtime-safety translate-c run-translated-c toolchain stage2
 
 %:
 	dh $@
@@ -10,7 +11,10 @@ override_dh_auto_clean:
 	dh_auto_clean
 	\rm -rf zig-cache
 
+#override_dh_auto_test:
+#	XDG_CACHE_HOME= ./obj-$(DEB_HOST_MULTIARCH)/zig build test
+
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-	$(foreach t,$(TESTS),./debian/zig/usr/bin/zig build test-$(t) || exit 1;)
+	$(foreach t,$(TESTS),XDG_CACHE_HOME= ./obj-$(DEB_HOST_MULTIARCH)/zig build test-$(t) || exit 1 ;)
 endif
