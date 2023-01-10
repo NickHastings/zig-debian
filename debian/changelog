@@ -1,5 +1,5 @@
-zig (0.9.1-1) UNRELEASED; urgency=medium
+zig (0.10.0-1) unstable; urgency=medium
 
   * Initial packaging (Closes: #995670).
 
- -- Nick Hastings <nicholaschastings@gmail.com>  Sun, 20 Feb 2022 09:41:26 +0900
+ -- Nick Hastings <nicholaschastings@gmail.com>  Tue, 10 Jan 2023 12:33:52 +0900
