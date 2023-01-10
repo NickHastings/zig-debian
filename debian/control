@@ -4,9 +4,9 @@ Priority: optional
 Maintainer: Nick Hastings <nicholaschastings@gmail.com>
 Build-Depends: cmake, debhelper-compat (= 13), gcc (>= 7.0.0),
  clang (>= 6.0.0),
- llvm-13-dev,
- libclang-13-dev,
- liblld-13-dev,
+ llvm-15-dev,
+ libclang-15-dev,
+ liblld-15-dev,
 Standards-Version: 4.6.0.1
 Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/nickh/zig
