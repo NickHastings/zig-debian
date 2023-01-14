@@ -249,54 +249,14 @@ Copyright: 2012-2020, Arm Limited
            1993-2004, Sun Microsystems, Inc
 License: Expat
 
-Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
-       lib/libc/include/aarch64-linux-gnu/bits/fenv.h
-       lib/libc/include/aarch64-linux-gnu/bits/floatn.h
-       lib/libc/include/aarch64-linux-gnu/bits/fp-fast.h
-       lib/libc/include/aarch64-linux-gnu/bits/hwcap.h
-       lib/libc/include/aarch64-linux-gnu/bits/link.h
-       lib/libc/include/aarch64-linux-gnu/bits/long-double.h
-       lib/libc/include/aarch64-linux-gnu/bits/mman.h
-       lib/libc/include/aarch64-linux-gnu/bits/procfs.h
-       lib/libc/include/aarch64-linux-gnu/bits/pthread_stack_min.h
-       lib/libc/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/aarch64-linux-gnu/bits/semaphore.h
-       lib/libc/include/aarch64-linux-gnu/bits/setjmp.h
-       lib/libc/include/aarch64-linux-gnu/bits/sigstack.h
-       lib/libc/include/aarch64-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/aarch64-linux-gnu/bits/struct_stat.h
-       lib/libc/include/aarch64-linux-gnu/bits/typesizes.h
-       lib/libc/include/aarch64-linux-gnu/bits/wordsize.h
-       lib/libc/include/aarch64-linux-gnu/fpu_control.h
-       lib/libc/include/aarch64-linux-gnu/ieee754.h
+Files: lib/libc/include/aarch64-linux-gnu/bits/*
+       lib/libc/include/aarch64-linux-gnu/*.h
        lib/libc/include/aarch64-linux-gnu/sys/*
-       lib/libc/include/aarch64_be-linux-gnu/bits/fcntl.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/fenv.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/floatn.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/fp-fast.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/hwcap.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/link.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/long-double.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/mman.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/procfs.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/pthread_stack_min.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/semaphore.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/setjmp.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/sigstack.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/struct_stat.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/typesizes.h
-       lib/libc/include/aarch64_be-linux-gnu/bits/wordsize.h
-       lib/libc/include/aarch64_be-linux-gnu/fpu_control.h
-       lib/libc/include/aarch64_be-linux-gnu/ieee754.h
+       lib/libc/include/aarch64_be-linux-gnu/bits/*
+       lib/libc/include/aarch64_be-linux-gnu/*.h
        lib/libc/include/aarch64_be-linux-gnu/sys/*
        lib/libc/include/any-linux-any/linux/cifs/cifs_mount.h
-       lib/libc/include/any-linux-any/linux/dvb/dmx.h
-       lib/libc/include/any-linux-any/linux/dvb/frontend.h
-       lib/libc/include/any-linux-any/linux/dvb/net.h
-       lib/libc/include/any-linux-any/linux/dvb/version.h
-       lib/libc/include/any-linux-any/linux/dvb/video.h
+       lib/libc/include/any-linux-any/linux/dvb/*
        lib/libc/include/any-linux-any/linux/mqueue.h
        lib/libc/include/any-linux-any/linux/nilfs2_api.h
        lib/libc/include/any-linux-any/linux/nilfs2_ondisk.h
@@ -390,94 +350,22 @@ Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/any-windows-any/wmpids.h
        lib/libc/include/any-windows-any/xapofx.h
        lib/libc/include/any-windows-any/xinput.h
-       lib/libc/include/arm-linux-gnueabi/bits/fcntl.h
-       lib/libc/include/arm-linux-gnueabi/bits/fenv.h
-       lib/libc/include/arm-linux-gnueabi/bits/floatn.h
-       lib/libc/include/arm-linux-gnueabi/bits/hwcap.h
-       lib/libc/include/arm-linux-gnueabi/bits/link.h
-       lib/libc/include/arm-linux-gnueabi/bits/long-double.h
-       lib/libc/include/arm-linux-gnueabi/bits/procfs-id.h
-       lib/libc/include/arm-linux-gnueabi/bits/procfs.h
-       lib/libc/include/arm-linux-gnueabi/bits/setjmp.h
-       lib/libc/include/arm-linux-gnueabi/bits/shmlba.h
-       lib/libc/include/arm-linux-gnueabi/bits/struct_rwlock.h
-       lib/libc/include/arm-linux-gnueabi/bits/struct_stat.h
-       lib/libc/include/arm-linux-gnueabi/bits/wordsize.h
+       lib/libc/include/arm-linux-gnueabi/bits/*
        lib/libc/include/arm-linux-gnueabi/fpu_control.h
        lib/libc/include/arm-linux-gnueabi/sys/*
-       lib/libc/include/arm-linux-gnueabihf/bits/fcntl.h
-       lib/libc/include/arm-linux-gnueabihf/bits/fenv.h
-       lib/libc/include/arm-linux-gnueabihf/bits/floatn.h
-       lib/libc/include/arm-linux-gnueabihf/bits/hwcap.h
-       lib/libc/include/arm-linux-gnueabihf/bits/link.h
-       lib/libc/include/arm-linux-gnueabihf/bits/long-double.h
-       lib/libc/include/arm-linux-gnueabihf/bits/procfs-id.h
-       lib/libc/include/arm-linux-gnueabihf/bits/procfs.h
-       lib/libc/include/arm-linux-gnueabihf/bits/setjmp.h
-       lib/libc/include/arm-linux-gnueabihf/bits/shmlba.h
-       lib/libc/include/arm-linux-gnueabihf/bits/struct_rwlock.h
-       lib/libc/include/arm-linux-gnueabihf/bits/struct_stat.h
-       lib/libc/include/arm-linux-gnueabihf/bits/wordsize.h
+       lib/libc/include/arm-linux-gnueabihf/bits/*
        lib/libc/include/arm-linux-gnueabihf/fpu_control.h
        lib/libc/include/arm-linux-gnueabihf/sys/*
-       lib/libc/include/armeb-linux-gnueabi/bits/fcntl.h
-       lib/libc/include/armeb-linux-gnueabi/bits/fenv.h
-       lib/libc/include/armeb-linux-gnueabi/bits/floatn.h
-       lib/libc/include/armeb-linux-gnueabi/bits/hwcap.h
-       lib/libc/include/armeb-linux-gnueabi/bits/link.h
-       lib/libc/include/armeb-linux-gnueabi/bits/long-double.h
-       lib/libc/include/armeb-linux-gnueabi/bits/procfs-id.h
-       lib/libc/include/armeb-linux-gnueabi/bits/procfs.h
-       lib/libc/include/armeb-linux-gnueabi/bits/setjmp.h
-       lib/libc/include/armeb-linux-gnueabi/bits/shmlba.h
-       lib/libc/include/armeb-linux-gnueabi/bits/struct_rwlock.h
-       lib/libc/include/armeb-linux-gnueabi/bits/struct_stat.h
-       lib/libc/include/armeb-linux-gnueabi/bits/wordsize.h
+       lib/libc/include/armeb-linux-gnueabi/bits/*
        lib/libc/include/armeb-linux-gnueabi/fpu_control.h
        lib/libc/include/armeb-linux-gnueabi/sys/*
-       lib/libc/include/armeb-linux-gnueabihf/bits/fcntl.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/fenv.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/floatn.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/hwcap.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/link.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/long-double.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/procfs-id.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/procfs.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/setjmp.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/shmlba.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/struct_rwlock.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/struct_stat.h
-       lib/libc/include/armeb-linux-gnueabihf/bits/wordsize.h
+       lib/libc/include/armeb-linux-gnueabihf/bits/*
        lib/libc/include/armeb-linux-gnueabihf/fpu_control.h
        lib/libc/include/armeb-linux-gnueabihf/sys/*
-       lib/libc/include/csky-linux-gnueabi/bits/fcntl.h
-       lib/libc/include/csky-linux-gnueabi/bits/fenv.h
-       lib/libc/include/csky-linux-gnueabi/bits/floatn.h
-       lib/libc/include/csky-linux-gnueabi/bits/link.h
-       lib/libc/include/csky-linux-gnueabi/bits/long-double.h
-       lib/libc/include/csky-linux-gnueabi/bits/procfs.h
-       lib/libc/include/csky-linux-gnueabi/bits/setjmp.h
-       lib/libc/include/csky-linux-gnueabi/bits/shmlba.h
-       lib/libc/include/csky-linux-gnueabi/bits/statfs.h
-       lib/libc/include/csky-linux-gnueabi/bits/struct_rwlock.h
-       lib/libc/include/csky-linux-gnueabi/bits/struct_stat.h
-       lib/libc/include/csky-linux-gnueabi/bits/typesizes.h
-       lib/libc/include/csky-linux-gnueabi/bits/wordsize.h
+       lib/libc/include/csky-linux-gnueabi/bits/*
        lib/libc/include/csky-linux-gnueabi/fpu_control.h
        lib/libc/include/csky-linux-gnueabi/sys/*
-       lib/libc/include/csky-linux-gnueabihf/bits/fcntl.h
-       lib/libc/include/csky-linux-gnueabihf/bits/fenv.h
-       lib/libc/include/csky-linux-gnueabihf/bits/floatn.h
-       lib/libc/include/csky-linux-gnueabihf/bits/link.h
-       lib/libc/include/csky-linux-gnueabihf/bits/long-double.h
-       lib/libc/include/csky-linux-gnueabihf/bits/procfs.h
-       lib/libc/include/csky-linux-gnueabihf/bits/setjmp.h
-       lib/libc/include/csky-linux-gnueabihf/bits/shmlba.h
-       lib/libc/include/csky-linux-gnueabihf/bits/statfs.h
-       lib/libc/include/csky-linux-gnueabihf/bits/struct_rwlock.h
-       lib/libc/include/csky-linux-gnueabihf/bits/struct_stat.h
-       lib/libc/include/csky-linux-gnueabihf/bits/typesizes.h
-       lib/libc/include/csky-linux-gnueabihf/bits/wordsize.h
+       lib/libc/include/csky-linux-gnueabihf/bits/*
        lib/libc/include/csky-linux-gnueabihf/fpu_control.h
        lib/libc/include/csky-linux-gnueabihf/sys/*
        lib/libc/include/generic-glibc/aio.h
@@ -488,152 +376,7 @@ Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/generic-glibc/argz.h
        lib/libc/include/generic-glibc/arpa/*
        lib/libc/include/generic-glibc/assert.h
-       lib/libc/include/generic-glibc/bits/argp-ldbl.h
-       lib/libc/include/generic-glibc/bits/byteswap.h
-       lib/libc/include/generic-glibc/bits/cmathcalls.h
-       lib/libc/include/generic-glibc/bits/confname.h
-       lib/libc/include/generic-glibc/bits/cpu-set.h
-       lib/libc/include/generic-glibc/bits/dirent.h
-       lib/libc/include/generic-glibc/bits/dirent_ext.h
-       lib/libc/include/generic-glibc/bits/dlfcn.h
-       lib/libc/include/generic-glibc/bits/endian.h
-       lib/libc/include/generic-glibc/bits/environments.h
-       lib/libc/include/generic-glibc/bits/epoll.h
-       lib/libc/include/generic-glibc/bits/err-ldbl.h
-       lib/libc/include/generic-glibc/bits/errno.h
-       lib/libc/include/generic-glibc/bits/error-ldbl.h
-       lib/libc/include/generic-glibc/bits/error.h
-       lib/libc/include/generic-glibc/bits/eventfd.h
-       lib/libc/include/generic-glibc/bits/fcntl-linux.h
-       lib/libc/include/generic-glibc/bits/fcntl.h
-       lib/libc/include/generic-glibc/bits/fcntl2.h
-       lib/libc/include/generic-glibc/bits/fenv.h
-       lib/libc/include/generic-glibc/bits/floatn-common.h
-       lib/libc/include/generic-glibc/bits/floatn.h
-       lib/libc/include/generic-glibc/bits/flt-eval-method.h
-       lib/libc/include/generic-glibc/bits/fp-fast.h
-       lib/libc/include/generic-glibc/bits/fp-logb.h
-       lib/libc/include/generic-glibc/bits/getopt_core.h
-       lib/libc/include/generic-glibc/bits/getopt_ext.h
-       lib/libc/include/generic-glibc/bits/getopt_posix.h
-       lib/libc/include/generic-glibc/bits/hwcap.h
-       lib/libc/include/generic-glibc/bits/in.h
-       lib/libc/include/generic-glibc/bits/indirect-return.h
-       lib/libc/include/generic-glibc/bits/inotify.h
-       lib/libc/include/generic-glibc/bits/ioctl-types.h
-       lib/libc/include/generic-glibc/bits/ioctls.h
-       lib/libc/include/generic-glibc/bits/ipc-perm.h
-       lib/libc/include/generic-glibc/bits/ipc.h
-       lib/libc/include/generic-glibc/bits/ipctypes.h
-       lib/libc/include/generic-glibc/bits/iscanonical.h
-       lib/libc/include/generic-glibc/bits/libc-header-start.h
-       lib/libc/include/generic-glibc/bits/libm-simd-decl-stubs.h
-       lib/libc/include/generic-glibc/bits/link.h
-       lib/libc/include/generic-glibc/bits/local_lim.h
-       lib/libc/include/generic-glibc/bits/locale.h
-       lib/libc/include/generic-glibc/bits/long-double.h
-       lib/libc/include/generic-glibc/bits/math-vector.h
-       lib/libc/include/generic-glibc/bits/mathcalls-helper-functions.h
-       lib/libc/include/generic-glibc/bits/mathcalls-narrow.h
-       lib/libc/include/generic-glibc/bits/mathcalls.h
-       lib/libc/include/generic-glibc/bits/mathdef.h
-       lib/libc/include/generic-glibc/bits/mman-linux.h
-       lib/libc/include/generic-glibc/bits/mman-map-flags-generic.h
-       lib/libc/include/generic-glibc/bits/mman-shared.h
-       lib/libc/include/generic-glibc/bits/mman.h
-       lib/libc/include/generic-glibc/bits/monetary-ldbl.h
-       lib/libc/include/generic-glibc/bits/mqueue.h
-       lib/libc/include/generic-glibc/bits/mqueue2.h
-       lib/libc/include/generic-glibc/bits/msq.h
-       lib/libc/include/generic-glibc/bits/netdb.h
-       lib/libc/include/generic-glibc/bits/param.h
-       lib/libc/include/generic-glibc/bits/platform/*
-       lib/libc/include/generic-glibc/bits/poll.h
-       lib/libc/include/generic-glibc/bits/poll2.h
-       lib/libc/include/generic-glibc/bits/posix1_lim.h
-       lib/libc/include/generic-glibc/bits/posix2_lim.h
-       lib/libc/include/generic-glibc/bits/posix_opt.h
-       lib/libc/include/generic-glibc/bits/ppc.h
-       lib/libc/include/generic-glibc/bits/printf-ldbl.h
-       lib/libc/include/generic-glibc/bits/procfs-extra.h
-       lib/libc/include/generic-glibc/bits/procfs-id.h
-       lib/libc/include/generic-glibc/bits/procfs-prregset.h
-       lib/libc/include/generic-glibc/bits/procfs.h
-       lib/libc/include/generic-glibc/bits/pthread_stack_min-dynamic.h
-       lib/libc/include/generic-glibc/bits/pthread_stack_min.h
-       lib/libc/include/generic-glibc/bits/pthreadtypes-arch.h
-       lib/libc/include/generic-glibc/bits/pthreadtypes.h
-       lib/libc/include/generic-glibc/bits/ptrace-shared.h
-       lib/libc/include/generic-glibc/bits/resource.h
-       lib/libc/include/generic-glibc/bits/sched.h
-       lib/libc/include/generic-glibc/bits/select.h
-       lib/libc/include/generic-glibc/bits/select2.h
-       lib/libc/include/generic-glibc/bits/sem.h
-       lib/libc/include/generic-glibc/bits/semaphore.h
-       lib/libc/include/generic-glibc/bits/setjmp.h
-       lib/libc/include/generic-glibc/bits/setjmp2.h
-       lib/libc/include/generic-glibc/bits/shm.h
-       lib/libc/include/generic-glibc/bits/shmlba.h
-       lib/libc/include/generic-glibc/bits/sigaction.h
-       lib/libc/include/generic-glibc/bits/sigcontext.h
-       lib/libc/include/generic-glibc/bits/sigevent-consts.h
-       lib/libc/include/generic-glibc/bits/siginfo-consts.h
-       lib/libc/include/generic-glibc/bits/signal_ext.h
-       lib/libc/include/generic-glibc/bits/signalfd.h
-       lib/libc/include/generic-glibc/bits/signum-arch.h
-       lib/libc/include/generic-glibc/bits/signum-generic.h
-       lib/libc/include/generic-glibc/bits/sigstack.h
-       lib/libc/include/generic-glibc/bits/sigstksz.h
-       lib/libc/include/generic-glibc/bits/sigthread.h
-       lib/libc/include/generic-glibc/bits/sockaddr.h
-       lib/libc/include/generic-glibc/bits/socket-constants.h
-       lib/libc/include/generic-glibc/bits/socket.h
-       lib/libc/include/generic-glibc/bits/socket2.h
-       lib/libc/include/generic-glibc/bits/socket_type.h
-       lib/libc/include/generic-glibc/bits/ss_flags.h
-       lib/libc/include/generic-glibc/bits/stab.def
-       lib/libc/include/generic-glibc/bits/stat.h
-       lib/libc/include/generic-glibc/bits/statfs.h
-       lib/libc/include/generic-glibc/bits/statvfs.h
-       lib/libc/include/generic-glibc/bits/statx-generic.h
-       lib/libc/include/generic-glibc/bits/statx.h
-       lib/libc/include/generic-glibc/bits/stdint-intn.h
-       lib/libc/include/generic-glibc/bits/stdint-uintn.h
-       lib/libc/include/generic-glibc/bits/stdio-ldbl.h
-       lib/libc/include/generic-glibc/bits/stdio.h
-       lib/libc/include/generic-glibc/bits/stdio2.h
-       lib/libc/include/generic-glibc/bits/stdio_lim.h
-       lib/libc/include/generic-glibc/bits/stdlib-bsearch.h
-       lib/libc/include/generic-glibc/bits/stdlib-float.h
-       lib/libc/include/generic-glibc/bits/stdlib-ldbl.h
-       lib/libc/include/generic-glibc/bits/stdlib.h
-       lib/libc/include/generic-glibc/bits/string_fortified.h
-       lib/libc/include/generic-glibc/bits/strings_fortified.h
-       lib/libc/include/generic-glibc/bits/struct_mutex.h
-       lib/libc/include/generic-glibc/bits/struct_rwlock.h
-       lib/libc/include/generic-glibc/bits/struct_stat.h
-       lib/libc/include/generic-glibc/bits/struct_stat_time64_helper.h
-       lib/libc/include/generic-glibc/bits/syslog-ldbl.h
-       lib/libc/include/generic-glibc/bits/syslog-path.h
-       lib/libc/include/generic-glibc/bits/syslog.h
-       lib/libc/include/generic-glibc/bits/sysmacros.h
-       lib/libc/include/generic-glibc/bits/termios-baud.h
-       lib/libc/include/generic-glibc/bits/termios-c_cc.h
-       lib/libc/include/generic-glibc/bits/termios-c_cflag.h
-       lib/libc/include/generic-glibc/bits/termios-c_iflag.h
-       lib/libc/include/generic-glibc/bits/termios-c_lflag.h
-       lib/libc/include/generic-glibc/bits/termios-c_oflag.h
-       lib/libc/include/generic-glibc/bits/termios-misc.h
-       lib/libc/include/generic-glibc/bits/termios-struct.h
-       lib/libc/include/generic-glibc/bits/termios-tcflow.h
-       lib/libc/include/generic-glibc/bits/termios.h
-       lib/libc/include/generic-glibc/bits/thread-shared-types.h
-       lib/libc/include/generic-glibc/bits/time.h
-       lib/libc/include/generic-glibc/bits/time64.h
-       lib/libc/include/generic-glibc/bits/timerfd.h
-       lib/libc/include/generic-glibc/bits/timesize.h
-       lib/libc/include/generic-glibc/bits/timex.h
-       lib/libc/include/generic-glibc/bits/types.h
+       lib/libc/include/generic-glibc/bits/*.h
        lib/libc/include/generic-glibc/bits/types/__locale_t.h
        lib/libc/include/generic-glibc/bits/types/__sigval_t.h
        lib/libc/include/generic-glibc/bits/types/cookie_io_functions_t.h
@@ -657,23 +400,6 @@ Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/generic-glibc/bits/types/struct_sigstack.h
        lib/libc/include/generic-glibc/bits/types/struct_statx.h
        lib/libc/include/generic-glibc/bits/types/struct_statx_timestamp.h
-       lib/libc/include/generic-glibc/bits/typesizes.h
-       lib/libc/include/generic-glibc/bits/uintn-identity.h
-       lib/libc/include/generic-glibc/bits/uio-ext.h
-       lib/libc/include/generic-glibc/bits/uio_lim.h
-       lib/libc/include/generic-glibc/bits/unistd.h
-       lib/libc/include/generic-glibc/bits/unistd_ext.h
-       lib/libc/include/generic-glibc/bits/utmp.h
-       lib/libc/include/generic-glibc/bits/utmpx.h
-       lib/libc/include/generic-glibc/bits/utsname.h
-       lib/libc/include/generic-glibc/bits/waitflags.h
-       lib/libc/include/generic-glibc/bits/waitstatus.h
-       lib/libc/include/generic-glibc/bits/wchar-ldbl.h
-       lib/libc/include/generic-glibc/bits/wchar.h
-       lib/libc/include/generic-glibc/bits/wchar2.h
-       lib/libc/include/generic-glibc/bits/wctype-wchar.h
-       lib/libc/include/generic-glibc/bits/wordsize.h
-       lib/libc/include/generic-glibc/bits/xopen_lim.h
        lib/libc/include/generic-glibc/byteswap.h
        lib/libc/include/generic-glibc/complex.h
        lib/libc/include/generic-glibc/cpio.h
@@ -859,577 +585,67 @@ Files: lib/libc/include/aarch64-linux-gnu/bits/fcntl.h
        lib/libc/include/generic-glibc/wchar.h
        lib/libc/include/generic-glibc/wctype.h
        lib/libc/include/generic-glibc/wordexp.h
-       lib/libc/include/i386-linux-gnu/bits/environments.h
-       lib/libc/include/i386-linux-gnu/bits/epoll.h
-       lib/libc/include/i386-linux-gnu/bits/fcntl.h
-       lib/libc/include/i386-linux-gnu/bits/fenv.h
-       lib/libc/include/i386-linux-gnu/bits/floatn.h
-       lib/libc/include/i386-linux-gnu/bits/flt-eval-method.h
-       lib/libc/include/i386-linux-gnu/bits/fp-logb.h
-       lib/libc/include/i386-linux-gnu/bits/indirect-return.h
-       lib/libc/include/i386-linux-gnu/bits/ipctypes.h
-       lib/libc/include/i386-linux-gnu/bits/iscanonical.h
-       lib/libc/include/i386-linux-gnu/bits/link.h
-       lib/libc/include/i386-linux-gnu/bits/long-double.h
-       lib/libc/include/i386-linux-gnu/bits/math-vector.h
-       lib/libc/include/i386-linux-gnu/bits/mman.h
-       lib/libc/include/i386-linux-gnu/bits/procfs-id.h
-       lib/libc/include/i386-linux-gnu/bits/procfs.h
-       lib/libc/include/i386-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/i386-linux-gnu/bits/setjmp.h
-       lib/libc/include/i386-linux-gnu/bits/sigcontext.h
-       lib/libc/include/i386-linux-gnu/bits/struct_mutex.h
-       lib/libc/include/i386-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/i386-linux-gnu/bits/struct_stat.h
-       lib/libc/include/i386-linux-gnu/bits/timesize.h
-       lib/libc/include/i386-linux-gnu/bits/types/*
-       lib/libc/include/i386-linux-gnu/bits/typesizes.h
+       lib/libc/include/i386-linux-gnu/bits/*.h
        lib/libc/include/i386-linux-gnu/finclude/*
        lib/libc/include/i386-linux-gnu/fpu_control.h
        lib/libc/include/i386-linux-gnu/sys/*
-       lib/libc/include/m68k-linux-gnu/bits/fcntl.h
-       lib/libc/include/m68k-linux-gnu/bits/fenv.h
-       lib/libc/include/m68k-linux-gnu/bits/floatn.h
-       lib/libc/include/m68k-linux-gnu/bits/flt-eval-method.h
-       lib/libc/include/m68k-linux-gnu/bits/fp-logb.h
-       lib/libc/include/m68k-linux-gnu/bits/iscanonical.h
-       lib/libc/include/m68k-linux-gnu/bits/link.h
-       lib/libc/include/m68k-linux-gnu/bits/long-double.h
-       lib/libc/include/m68k-linux-gnu/bits/poll.h
-       lib/libc/include/m68k-linux-gnu/bits/procfs-id.h
-       lib/libc/include/m68k-linux-gnu/bits/procfs.h
-       lib/libc/include/m68k-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/m68k-linux-gnu/bits/semaphore.h
-       lib/libc/include/m68k-linux-gnu/bits/setjmp.h
-       lib/libc/include/m68k-linux-gnu/bits/sockaddr.h
-       lib/libc/include/m68k-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/m68k-linux-gnu/bits/struct_stat.h
-       lib/libc/include/m68k-linux-gnu/bits/wordsize.h
+       lib/libc/include/m68k-linux-gnu/bits/*
        lib/libc/include/m68k-linux-gnu/fpu_control.h
        lib/libc/include/m68k-linux-gnu/sys/*
-       lib/libc/include/mips-linux-gnueabi/bits/dlfcn.h
-       lib/libc/include/mips-linux-gnueabi/bits/errno.h
-       lib/libc/include/mips-linux-gnueabi/bits/eventfd.h
-       lib/libc/include/mips-linux-gnueabi/bits/inotify.h
-       lib/libc/include/mips-linux-gnueabi/bits/ioctl-types.h
-       lib/libc/include/mips-linux-gnueabi/bits/ipctypes.h
-       lib/libc/include/mips-linux-gnueabi/bits/mman.h
-       lib/libc/include/mips-linux-gnueabi/bits/poll.h
-       lib/libc/include/mips-linux-gnueabi/bits/pthread_stack_min.h
-       lib/libc/include/mips-linux-gnueabi/bits/pthreadtypes-arch.h
-       lib/libc/include/mips-linux-gnueabi/bits/resource.h
-       lib/libc/include/mips-linux-gnueabi/bits/semaphore.h
-       lib/libc/include/mips-linux-gnueabi/bits/shmlba.h
-       lib/libc/include/mips-linux-gnueabi/bits/sigaction.h
-       lib/libc/include/mips-linux-gnueabi/bits/sigcontext.h
-       lib/libc/include/mips-linux-gnueabi/bits/signalfd.h
-       lib/libc/include/mips-linux-gnueabi/bits/signum-arch.h
-       lib/libc/include/mips-linux-gnueabi/bits/socket-constants.h
-       lib/libc/include/mips-linux-gnueabi/bits/socket_type.h
-       lib/libc/include/mips-linux-gnueabi/bits/statfs.h
-       lib/libc/include/mips-linux-gnueabi/bits/struct_mutex.h
-       lib/libc/include/mips-linux-gnueabi/bits/termios-c_cc.h
-       lib/libc/include/mips-linux-gnueabi/bits/termios-c_lflag.h
-       lib/libc/include/mips-linux-gnueabi/bits/termios-struct.h
-       lib/libc/include/mips-linux-gnueabi/bits/termios-tcflow.h
-       lib/libc/include/mips-linux-gnueabi/bits/timerfd.h
-       lib/libc/include/mips-linux-gnueabi/bits/types/*
+       lib/libc/include/mips-linux-gnueabi/bits/*
        lib/libc/include/mips-linux-gnueabi/ieee754.h
-       lib/libc/include/mips-linux-gnueabihf/bits/dlfcn.h
-       lib/libc/include/mips-linux-gnueabihf/bits/errno.h
-       lib/libc/include/mips-linux-gnueabihf/bits/eventfd.h
-       lib/libc/include/mips-linux-gnueabihf/bits/inotify.h
-       lib/libc/include/mips-linux-gnueabihf/bits/ioctl-types.h
-       lib/libc/include/mips-linux-gnueabihf/bits/ipctypes.h
-       lib/libc/include/mips-linux-gnueabihf/bits/mman.h
-       lib/libc/include/mips-linux-gnueabihf/bits/poll.h
-       lib/libc/include/mips-linux-gnueabihf/bits/pthread_stack_min.h
-       lib/libc/include/mips-linux-gnueabihf/bits/pthreadtypes-arch.h
-       lib/libc/include/mips-linux-gnueabihf/bits/resource.h
-       lib/libc/include/mips-linux-gnueabihf/bits/semaphore.h
-       lib/libc/include/mips-linux-gnueabihf/bits/shmlba.h
-       lib/libc/include/mips-linux-gnueabihf/bits/sigaction.h
-       lib/libc/include/mips-linux-gnueabihf/bits/sigcontext.h
-       lib/libc/include/mips-linux-gnueabihf/bits/signalfd.h
-       lib/libc/include/mips-linux-gnueabihf/bits/signum-arch.h
-       lib/libc/include/mips-linux-gnueabihf/bits/socket-constants.h
-       lib/libc/include/mips-linux-gnueabihf/bits/socket_type.h
-       lib/libc/include/mips-linux-gnueabihf/bits/statfs.h
-       lib/libc/include/mips-linux-gnueabihf/bits/struct_mutex.h
-       lib/libc/include/mips-linux-gnueabihf/bits/termios-c_cc.h
-       lib/libc/include/mips-linux-gnueabihf/bits/termios-c_lflag.h
-       lib/libc/include/mips-linux-gnueabihf/bits/termios-struct.h
-       lib/libc/include/mips-linux-gnueabihf/bits/termios-tcflow.h
-       lib/libc/include/mips-linux-gnueabihf/bits/timerfd.h
-       lib/libc/include/mips-linux-gnueabihf/bits/types/*
+       lib/libc/include/mips-linux-gnueabihf/bits/*
        lib/libc/include/mips-linux-gnueabihf/ieee754.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/dlfcn.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/errno.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/eventfd.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/inotify.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/ioctl-types.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/ipctypes.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/mman.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/poll.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/pthread_stack_min.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/pthreadtypes-arch.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/resource.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/semaphore.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/shmlba.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/sigaction.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/sigcontext.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/signalfd.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/signum-arch.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/socket-constants.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/socket_type.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/statfs.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/struct_mutex.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/termios-c_cc.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/termios-c_lflag.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/termios-struct.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/termios-tcflow.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/timerfd.h
-       lib/libc/include/mips64-linux-gnuabi64/bits/types/*
+       lib/libc/include/mips64-linux-gnuabi64/bits/*
        lib/libc/include/mips64-linux-gnuabi64/ieee754.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/dlfcn.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/errno.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/eventfd.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/inotify.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/ioctl-types.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/ipctypes.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/mman.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/poll.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/pthread_stack_min.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/pthreadtypes-arch.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/resource.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/semaphore.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/shmlba.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/sigaction.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/sigcontext.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/signalfd.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/signum-arch.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/socket-constants.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/socket_type.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/statfs.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/struct_mutex.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/termios-c_cc.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/termios-c_lflag.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/termios-struct.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/termios-tcflow.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/timerfd.h
-       lib/libc/include/mips64-linux-gnuabin32/bits/types/*
+       lib/libc/include/mips64-linux-gnuabin32/bits/*
        lib/libc/include/mips64-linux-gnuabin32/ieee754.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/dlfcn.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/errno.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/eventfd.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/inotify.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/ioctl-types.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/ipctypes.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/mman.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/poll.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/pthread_stack_min.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/pthreadtypes-arch.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/resource.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/semaphore.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/shmlba.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/sigaction.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/sigcontext.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/signalfd.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/signum-arch.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/socket-constants.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/socket_type.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/statfs.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/struct_mutex.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/termios-c_cc.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/termios-c_lflag.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/termios-struct.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/termios-tcflow.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/timerfd.h
-       lib/libc/include/mips64el-linux-gnuabi64/bits/types/*
+       lib/libc/include/mips64el-linux-gnuabi64/bits/*
        lib/libc/include/mips64el-linux-gnuabi64/ieee754.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/dlfcn.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/errno.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/eventfd.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/inotify.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/ioctl-types.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/ipctypes.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/mman.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/poll.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/pthread_stack_min.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/pthreadtypes-arch.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/resource.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/semaphore.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/shmlba.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/sigaction.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/sigcontext.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/signalfd.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/signum-arch.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/socket-constants.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/socket_type.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/statfs.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/struct_mutex.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/termios-c_cc.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/termios-c_lflag.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/termios-struct.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/termios-tcflow.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/timerfd.h
-       lib/libc/include/mips64el-linux-gnuabin32/bits/types/*
+       lib/libc/include/mips64el-linux-gnuabin32/bits/*
        lib/libc/include/mips64el-linux-gnuabin32/ieee754.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/dlfcn.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/errno.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/eventfd.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/inotify.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/ioctl-types.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/ipctypes.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/mman.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/poll.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/pthread_stack_min.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/pthreadtypes-arch.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/resource.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/semaphore.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/shmlba.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/sigaction.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/sigcontext.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/signalfd.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/signum-arch.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/socket-constants.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/socket_type.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/statfs.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/struct_mutex.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/termios-c_cc.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/termios-c_lflag.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/termios-struct.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/termios-tcflow.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/timerfd.h
-       lib/libc/include/mipsel-linux-gnueabi/bits/types/*
+       lib/libc/include/mipsel-linux-gnueabi/bits/*
        lib/libc/include/mipsel-linux-gnueabi/ieee754.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/dlfcn.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/errno.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/eventfd.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/inotify.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/ioctl-types.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/ipctypes.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/mman.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/poll.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/pthread_stack_min.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/pthreadtypes-arch.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/resource.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/semaphore.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/shmlba.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/sigaction.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/sigcontext.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/signalfd.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/signum-arch.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/socket-constants.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/socket_type.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/statfs.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/struct_mutex.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/termios-c_cc.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/termios-c_lflag.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/termios-struct.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/termios-tcflow.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/timerfd.h
-       lib/libc/include/mipsel-linux-gnueabihf/bits/types/*
+       lib/libc/include/mipsel-linux-gnueabihf/bits/*
        lib/libc/include/mipsel-linux-gnueabihf/ieee754.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/environments.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/fcntl.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/fenv.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/floatn.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/fp-fast.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/hwcap.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/ioctl-types.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/ipc-perm.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/iscanonical.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/link.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/long-double.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/mman.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/procfs.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/pthread_stack_min.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/setjmp.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/sigstack.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/socket-constants.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/struct_mutex.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/struct_rwlock.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/struct_stat.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-baud.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-c_cc.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-c_cflag.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-c_iflag.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-c_lflag.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-c_oflag.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/termios-misc.h
-       lib/libc/include/powerpc-linux-gnueabi/bits/types/*
+       lib/libc/include/powerpc-linux-gnueabi/bits/*
        lib/libc/include/powerpc-linux-gnueabi/fpu_control.h
        lib/libc/include/powerpc-linux-gnueabi/ieee754.h
        lib/libc/include/powerpc-linux-gnueabi/sys/*
-       lib/libc/include/powerpc-linux-gnueabihf/bits/environments.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/fcntl.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/fenv.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/floatn.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/fp-fast.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/hwcap.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/ioctl-types.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/ipc-perm.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/iscanonical.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/link.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/long-double.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/mman.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/procfs.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/pthread_stack_min.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/setjmp.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/sigstack.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/socket-constants.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/struct_mutex.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/struct_rwlock.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/struct_stat.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-baud.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-c_cc.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-c_cflag.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-c_iflag.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-c_lflag.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-c_oflag.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/termios-misc.h
-       lib/libc/include/powerpc-linux-gnueabihf/bits/types/*
+       lib/libc/include/powerpc-linux-gnueabihf/bits/*
        lib/libc/include/powerpc-linux-gnueabihf/fpu_control.h
        lib/libc/include/powerpc-linux-gnueabihf/ieee754.h
        lib/libc/include/powerpc-linux-gnueabihf/sys/*
-       lib/libc/include/powerpc64-linux-gnu/bits/environments.h
-       lib/libc/include/powerpc64-linux-gnu/bits/fcntl.h
-       lib/libc/include/powerpc64-linux-gnu/bits/fenv.h
-       lib/libc/include/powerpc64-linux-gnu/bits/floatn.h
-       lib/libc/include/powerpc64-linux-gnu/bits/fp-fast.h
-       lib/libc/include/powerpc64-linux-gnu/bits/hwcap.h
-       lib/libc/include/powerpc64-linux-gnu/bits/ioctl-types.h
-       lib/libc/include/powerpc64-linux-gnu/bits/ipc-perm.h
-       lib/libc/include/powerpc64-linux-gnu/bits/iscanonical.h
-       lib/libc/include/powerpc64-linux-gnu/bits/link.h
-       lib/libc/include/powerpc64-linux-gnu/bits/long-double.h
-       lib/libc/include/powerpc64-linux-gnu/bits/mman.h
-       lib/libc/include/powerpc64-linux-gnu/bits/procfs.h
-       lib/libc/include/powerpc64-linux-gnu/bits/pthread_stack_min.h
-       lib/libc/include/powerpc64-linux-gnu/bits/setjmp.h
-       lib/libc/include/powerpc64-linux-gnu/bits/sigstack.h
-       lib/libc/include/powerpc64-linux-gnu/bits/socket-constants.h
-       lib/libc/include/powerpc64-linux-gnu/bits/struct_mutex.h
-       lib/libc/include/powerpc64-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/powerpc64-linux-gnu/bits/struct_stat.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-baud.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-c_cc.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-c_cflag.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-c_iflag.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-c_lflag.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-c_oflag.h
-       lib/libc/include/powerpc64-linux-gnu/bits/termios-misc.h
-       lib/libc/include/powerpc64-linux-gnu/bits/types/*
+       lib/libc/include/powerpc64-linux-gnu/bits/*
        lib/libc/include/powerpc64-linux-gnu/fpu_control.h
        lib/libc/include/powerpc64-linux-gnu/ieee754.h
        lib/libc/include/powerpc64-linux-gnu/sys/*
-       lib/libc/include/powerpc64le-linux-gnu/bits/environments.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/fcntl.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/fenv.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/floatn.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/fp-fast.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/hwcap.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/ioctl-types.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/ipc-perm.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/iscanonical.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/link.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/long-double.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/mman.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/procfs.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/pthread_stack_min.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/setjmp.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/sigstack.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/socket-constants.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/struct_mutex.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/struct_stat.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-baud.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-c_cc.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-c_cflag.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-c_iflag.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-c_lflag.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-c_oflag.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/termios-misc.h
-       lib/libc/include/powerpc64le-linux-gnu/bits/types/*
+       lib/libc/include/powerpc64le-linux-gnu/bits/*
        lib/libc/include/powerpc64le-linux-gnu/fpu_control.h
        lib/libc/include/powerpc64le-linux-gnu/ieee754.h
        lib/libc/include/powerpc64le-linux-gnu/sys/*
        lib/libc/include/riscv64-linux-gnu/bits/environments.h
-       lib/libc/include/riscv64-linux-gnu/bits/fcntl.h
-       lib/libc/include/riscv64-linux-gnu/bits/fenv.h
-       lib/libc/include/riscv64-linux-gnu/bits/floatn.h
-       lib/libc/include/riscv64-linux-gnu/bits/link.h
-       lib/libc/include/riscv64-linux-gnu/bits/long-double.h
-       lib/libc/include/riscv64-linux-gnu/bits/procfs.h
-       lib/libc/include/riscv64-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/riscv64-linux-gnu/bits/setjmp.h
-       lib/libc/include/riscv64-linux-gnu/bits/sigcontext.h
-       lib/libc/include/riscv64-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/riscv64-linux-gnu/bits/struct_stat.h
-       lib/libc/include/riscv64-linux-gnu/bits/time64.h
-       lib/libc/include/riscv64-linux-gnu/bits/timesize.h
-       lib/libc/include/riscv64-linux-gnu/bits/typesizes.h
-       lib/libc/include/riscv64-linux-gnu/bits/wordsize.h
+       lib/libc/include/riscv64-linux-gnu/bits/*
        lib/libc/include/riscv64-linux-gnu/fpu_control.h
        lib/libc/include/riscv64-linux-gnu/ieee754.h
        lib/libc/include/riscv64-linux-gnu/sys/*
-       lib/libc/include/s390x-linux-gnu/bits/elfclass.h
-       lib/libc/include/s390x-linux-gnu/bits/environments.h
-       lib/libc/include/s390x-linux-gnu/bits/fcntl.h
-       lib/libc/include/s390x-linux-gnu/bits/fenv.h
-       lib/libc/include/s390x-linux-gnu/bits/floatn.h
-       lib/libc/include/s390x-linux-gnu/bits/hwcap.h
-       lib/libc/include/s390x-linux-gnu/bits/link.h
-       lib/libc/include/s390x-linux-gnu/bits/long-double.h
-       lib/libc/include/s390x-linux-gnu/bits/procfs-extra.h
-       lib/libc/include/s390x-linux-gnu/bits/procfs-id.h
-       lib/libc/include/s390x-linux-gnu/bits/procfs.h
-       lib/libc/include/s390x-linux-gnu/bits/setjmp.h
-       lib/libc/include/s390x-linux-gnu/bits/sigaction.h
-       lib/libc/include/s390x-linux-gnu/bits/statfs.h
-       lib/libc/include/s390x-linux-gnu/bits/struct_mutex.h
-       lib/libc/include/s390x-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/s390x-linux-gnu/bits/struct_stat.h
-       lib/libc/include/s390x-linux-gnu/bits/typesizes.h
-       lib/libc/include/s390x-linux-gnu/bits/utmp.h
-       lib/libc/include/s390x-linux-gnu/bits/utmpx.h
+       lib/libc/include/s390x-linux-gnu/bits/*.h
        lib/libc/include/s390x-linux-gnu/fpu_control.h
        lib/libc/include/s390x-linux-gnu/ieee754.h
        lib/libc/include/s390x-linux-gnu/sys/*
-       lib/libc/include/sparc-linux-gnu/bits/environments.h
-       lib/libc/include/sparc-linux-gnu/bits/epoll.h
-       lib/libc/include/sparc-linux-gnu/bits/errno.h
-       lib/libc/include/sparc-linux-gnu/bits/eventfd.h
-       lib/libc/include/sparc-linux-gnu/bits/fcntl.h
-       lib/libc/include/sparc-linux-gnu/bits/fenv.h
-       lib/libc/include/sparc-linux-gnu/bits/floatn.h
-       lib/libc/include/sparc-linux-gnu/bits/hwcap.h
-       lib/libc/include/sparc-linux-gnu/bits/inotify.h
-       lib/libc/include/sparc-linux-gnu/bits/ioctls.h
-       lib/libc/include/sparc-linux-gnu/bits/ipc-perm.h
-       lib/libc/include/sparc-linux-gnu/bits/link.h
-       lib/libc/include/sparc-linux-gnu/bits/long-double.h
-       lib/libc/include/sparc-linux-gnu/bits/mman.h
-       lib/libc/include/sparc-linux-gnu/bits/poll.h
-       lib/libc/include/sparc-linux-gnu/bits/procfs-extra.h
-       lib/libc/include/sparc-linux-gnu/bits/procfs-id.h
-       lib/libc/include/sparc-linux-gnu/bits/procfs.h
-       lib/libc/include/sparc-linux-gnu/bits/resource.h
-       lib/libc/include/sparc-linux-gnu/bits/setjmp.h
-       lib/libc/include/sparc-linux-gnu/bits/shmlba.h
-       lib/libc/include/sparc-linux-gnu/bits/sigaction.h
-       lib/libc/include/sparc-linux-gnu/bits/sigcontext.h
-       lib/libc/include/sparc-linux-gnu/bits/signalfd.h
-       lib/libc/include/sparc-linux-gnu/bits/signum-arch.h
-       lib/libc/include/sparc-linux-gnu/bits/sigstack.h
-       lib/libc/include/sparc-linux-gnu/bits/socket-constants.h
-       lib/libc/include/sparc-linux-gnu/bits/socket_type.h
-       lib/libc/include/sparc-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/sparc-linux-gnu/bits/struct_stat.h
-       lib/libc/include/sparc-linux-gnu/bits/termios-baud.h
-       lib/libc/include/sparc-linux-gnu/bits/termios-c_cc.h
-       lib/libc/include/sparc-linux-gnu/bits/termios-c_oflag.h
-       lib/libc/include/sparc-linux-gnu/bits/termios-struct.h
-       lib/libc/include/sparc-linux-gnu/bits/timerfd.h
-       lib/libc/include/sparc-linux-gnu/bits/types/*
-       lib/libc/include/sparc-linux-gnu/bits/typesizes.h
+       lib/libc/include/sparc-linux-gnu/bits/*
        lib/libc/include/sparc-linux-gnu/fpu_control.h
        lib/libc/include/sparc-linux-gnu/ieee754.h
        lib/libc/include/sparc-linux-gnu/sys/*
-       lib/libc/include/sparcv9-linux-gnu/bits/environments.h
-       lib/libc/include/sparcv9-linux-gnu/bits/epoll.h
-       lib/libc/include/sparcv9-linux-gnu/bits/errno.h
-       lib/libc/include/sparcv9-linux-gnu/bits/eventfd.h
-       lib/libc/include/sparcv9-linux-gnu/bits/fcntl.h
-       lib/libc/include/sparcv9-linux-gnu/bits/fenv.h
-       lib/libc/include/sparcv9-linux-gnu/bits/floatn.h
-       lib/libc/include/sparcv9-linux-gnu/bits/hwcap.h
-       lib/libc/include/sparcv9-linux-gnu/bits/inotify.h
-       lib/libc/include/sparcv9-linux-gnu/bits/ioctls.h
-       lib/libc/include/sparcv9-linux-gnu/bits/ipc-perm.h
-       lib/libc/include/sparcv9-linux-gnu/bits/link.h
-       lib/libc/include/sparcv9-linux-gnu/bits/long-double.h
-       lib/libc/include/sparcv9-linux-gnu/bits/mman.h
-       lib/libc/include/sparcv9-linux-gnu/bits/poll.h
-       lib/libc/include/sparcv9-linux-gnu/bits/procfs-extra.h
-       lib/libc/include/sparcv9-linux-gnu/bits/procfs-id.h
-       lib/libc/include/sparcv9-linux-gnu/bits/procfs.h
-       lib/libc/include/sparcv9-linux-gnu/bits/resource.h
-       lib/libc/include/sparcv9-linux-gnu/bits/setjmp.h
-       lib/libc/include/sparcv9-linux-gnu/bits/shmlba.h
-       lib/libc/include/sparcv9-linux-gnu/bits/sigaction.h
-       lib/libc/include/sparcv9-linux-gnu/bits/sigcontext.h
-       lib/libc/include/sparcv9-linux-gnu/bits/signalfd.h
-       lib/libc/include/sparcv9-linux-gnu/bits/signum-arch.h
-       lib/libc/include/sparcv9-linux-gnu/bits/sigstack.h
-       lib/libc/include/sparcv9-linux-gnu/bits/socket-constants.h
-       lib/libc/include/sparcv9-linux-gnu/bits/socket_type.h
-       lib/libc/include/sparcv9-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/sparcv9-linux-gnu/bits/struct_stat.h
-       lib/libc/include/sparcv9-linux-gnu/bits/termios-baud.h
-       lib/libc/include/sparcv9-linux-gnu/bits/termios-c_cc.h
-       lib/libc/include/sparcv9-linux-gnu/bits/termios-c_oflag.h
-       lib/libc/include/sparcv9-linux-gnu/bits/termios-struct.h
-       lib/libc/include/sparcv9-linux-gnu/bits/timerfd.h
-       lib/libc/include/sparcv9-linux-gnu/bits/types/*
-       lib/libc/include/sparcv9-linux-gnu/bits/typesizes.h
+       lib/libc/include/sparcv9-linux-gnu/bits/*
        lib/libc/include/sparcv9-linux-gnu/fpu_control.h
        lib/libc/include/sparcv9-linux-gnu/ieee754.h
        lib/libc/include/sparcv9-linux-gnu/sys/*
-       lib/libc/include/x86_64-linux-gnu/bits/environments.h
-       lib/libc/include/x86_64-linux-gnu/bits/epoll.h
-       lib/libc/include/x86_64-linux-gnu/bits/fcntl.h
-       lib/libc/include/x86_64-linux-gnu/bits/fenv.h
-       lib/libc/include/x86_64-linux-gnu/bits/floatn.h
-       lib/libc/include/x86_64-linux-gnu/bits/flt-eval-method.h
-       lib/libc/include/x86_64-linux-gnu/bits/fp-logb.h
-       lib/libc/include/x86_64-linux-gnu/bits/indirect-return.h
-       lib/libc/include/x86_64-linux-gnu/bits/ipctypes.h
-       lib/libc/include/x86_64-linux-gnu/bits/iscanonical.h
-       lib/libc/include/x86_64-linux-gnu/bits/link.h
-       lib/libc/include/x86_64-linux-gnu/bits/long-double.h
-       lib/libc/include/x86_64-linux-gnu/bits/math-vector.h
-       lib/libc/include/x86_64-linux-gnu/bits/mman.h
-       lib/libc/include/x86_64-linux-gnu/bits/procfs-id.h
-       lib/libc/include/x86_64-linux-gnu/bits/procfs.h
-       lib/libc/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
-       lib/libc/include/x86_64-linux-gnu/bits/setjmp.h
-       lib/libc/include/x86_64-linux-gnu/bits/sigcontext.h
-       lib/libc/include/x86_64-linux-gnu/bits/struct_mutex.h
-       lib/libc/include/x86_64-linux-gnu/bits/struct_rwlock.h
-       lib/libc/include/x86_64-linux-gnu/bits/struct_stat.h
-       lib/libc/include/x86_64-linux-gnu/bits/timesize.h
-       lib/libc/include/x86_64-linux-gnu/bits/types/*
-       lib/libc/include/x86_64-linux-gnu/bits/typesizes.h
+       lib/libc/include/x86_64-linux-gnu/bits/*
        lib/libc/include/x86_64-linux-gnu/finclude/*
        lib/libc/include/x86_64-linux-gnu/fpu_control.h
        lib/libc/include/x86_64-linux-gnu/sys/*
-       lib/libc/include/x86_64-linux-gnux32/bits/environments.h
-       lib/libc/include/x86_64-linux-gnux32/bits/epoll.h
-       lib/libc/include/x86_64-linux-gnux32/bits/fcntl.h
-       lib/libc/include/x86_64-linux-gnux32/bits/fenv.h
-       lib/libc/include/x86_64-linux-gnux32/bits/floatn.h
-       lib/libc/include/x86_64-linux-gnux32/bits/flt-eval-method.h
-       lib/libc/include/x86_64-linux-gnux32/bits/fp-logb.h
-       lib/libc/include/x86_64-linux-gnux32/bits/indirect-return.h
-       lib/libc/include/x86_64-linux-gnux32/bits/ipctypes.h
-       lib/libc/include/x86_64-linux-gnux32/bits/iscanonical.h
-       lib/libc/include/x86_64-linux-gnux32/bits/link.h
-       lib/libc/include/x86_64-linux-gnux32/bits/long-double.h
-       lib/libc/include/x86_64-linux-gnux32/bits/math-vector.h
-       lib/libc/include/x86_64-linux-gnux32/bits/mman.h
-       lib/libc/include/x86_64-linux-gnux32/bits/procfs-id.h
-       lib/libc/include/x86_64-linux-gnux32/bits/procfs.h
-       lib/libc/include/x86_64-linux-gnux32/bits/pthreadtypes-arch.h
-       lib/libc/include/x86_64-linux-gnux32/bits/setjmp.h
-       lib/libc/include/x86_64-linux-gnux32/bits/sigcontext.h
-       lib/libc/include/x86_64-linux-gnux32/bits/struct_mutex.h
-       lib/libc/include/x86_64-linux-gnux32/bits/struct_rwlock.h
-       lib/libc/include/x86_64-linux-gnux32/bits/struct_stat.h
-       lib/libc/include/x86_64-linux-gnux32/bits/timesize.h
-       lib/libc/include/x86_64-linux-gnux32/bits/types/*
-       lib/libc/include/x86_64-linux-gnux32/bits/typesizes.h
+       lib/libc/include/x86_64-linux-gnux32/bits/*
        lib/libc/include/x86_64-linux-gnux32/finclude/*
        lib/libc/include/x86_64-linux-gnux32/fpu_control.h
        lib/libc/include/x86_64-linux-gnux32/sys/*
@@ -1486,6 +702,26 @@ Copyright: 2002, Alexandre Julliard
            the Wine project
            violations either, hah
 License: LGPL-2.1+
+
+Files: lib/libc/include/*/bits/endianness.h
+       lib/libc/include/*/bits/a.out.h
+       lib/libc/include/generic-glibc/bits/elfclass.h
+       lib/libc/include/generic-glibc/bits/initspin.h
+       lib/libc/include/*/bits/siginfo-arch.h
+       lib/libc/include/*/bits/siginfo-consts-arch.h
+       lib/libc/include/generic-glibc/bits/syscall.h
+       lib/libc/include/i386-linux-gnu/bits/wordsize.h
+       lib/libc/include/powerpc-linux-gnueabi/bits/wordsize.h
+       lib/libc/include/powerpc-linux-gnueabihf/bits/wordsize.h
+       lib/libc/include/powerpc64-linux-gnu/bits/wordsize.h
+       lib/libc/include/powerpc64le-linux-gnu/bits/wordsize.h
+       lib/libc/include/s390x-linux-gnu/bits/wordsize.h
+       lib/libc/include/sparc-linux-gnu/bits/wordsize.h
+       lib/libc/include/sparcv9-linux-gnu/bits/wordsize.h
+       lib/libc/include/x86_64-linux-gnu/bits/wordsize.h
+       lib/libc/include/x86_64-linux-gnux32/bits/wordsize.h
+Copyright: 2015-2021, Zig Contributors
+License: Expat
 
 Files: lib/libc/mingw/*
 Copyright: 2010, L'A' +
@@ -1703,14 +939,7 @@ Copyright: 2003, + Evgeniy Polyakov <johnpol@2ka.mxt.ru>
            2003, Winfried Ritsch (IEM)
 License: GPL-2+
 
-Files: lib/libc/include/aarch64-macos.11-gnu/libkern/OSAtomic.h
-       lib/libc/include/aarch64-macos.11-gnu/libkern/OSAtomicDeprecated.h
-       lib/libc/include/aarch64-macos.11-gnu/libkern/OSAtomicQueue.h
-       lib/libc/include/aarch64-macos.11-gnu/libkern/OSSpinLockDeprecated.h
-       lib/libc/include/aarch64-macos.12-gnu/libkern/OSAtomic.h
-       lib/libc/include/aarch64-macos.12-gnu/libkern/OSAtomicDeprecated.h
-       lib/libc/include/aarch64-macos.12-gnu/libkern/OSAtomicQueue.h
-       lib/libc/include/aarch64-macos.12-gnu/libkern/OSSpinLockDeprecated.h
+Files: lib/libc/include/aarch64-macos.1?-gnu/libkern/*
        lib/libc/include/any-macos-any/AssertMacros.h
        lib/libc/include/any-macos-any/Availability.h
        lib/libc/include/any-macos-any/CommonCrypto/*
@@ -1804,6 +1033,10 @@ Copyright: 1997-2018, Apple Computer, Inc
            1992-1995, NeXT Computer, Inc
            1988-1996, NeXT Software, Inc
 License: APSL-2
+
+Files: lib/libc/include/aarch64-macos.1?-gnu/libkern/arm/*
+Copyright: 1999-2007, Apple Inc.
+License: Expat
 
 Files: lib/libc/include/aarch64-macos.11-gnu/arm/endian.h
        lib/libc/include/aarch64-macos.11-gnu/arm/limits.h
@@ -2049,20 +1282,7 @@ Copyright: 1991-2021, Free Software Foundation, Inc
 Comment: No explicit license found, using license(s) from:
  lib/libc/glibc/LICENSES
 
-Files: lib/libc/include/aarch64-linux-any/asm/auxvec.h
-       lib/libc/include/aarch64-linux-any/asm/bitsperlong.h
-       lib/libc/include/aarch64-linux-any/asm/byteorder.h
-       lib/libc/include/aarch64-linux-any/asm/fcntl.h
-       lib/libc/include/aarch64-linux-any/asm/hwcap.h
-       lib/libc/include/aarch64-linux-any/asm/kvm.h
-       lib/libc/include/aarch64-linux-any/asm/param.h
-       lib/libc/include/aarch64-linux-any/asm/ptrace.h
-       lib/libc/include/aarch64-linux-any/asm/setup.h
-       lib/libc/include/aarch64-linux-any/asm/sigcontext.h
-       lib/libc/include/aarch64-linux-any/asm/signal.h
-       lib/libc/include/aarch64-linux-any/asm/statfs.h
-       lib/libc/include/aarch64-linux-any/asm/ucontext.h
-       lib/libc/include/aarch64-linux-any/asm/unistd.h
+Files: lib/libc/include/aarch64-linux-any/asm/*
        lib/libc/include/any-linux-any/drm/armada_drm.h
        lib/libc/include/any-linux-any/drm/etnaviv_drm.h
        lib/libc/include/any-linux-any/drm/omap_drm.h
@@ -2111,32 +1331,8 @@ Files: lib/libc/include/aarch64-linux-any/asm/auxvec.h
        lib/libc/include/any-linux-any/sound/snd_sst_tokens.h
        lib/libc/include/any-linux-any/video/sisfb.h
        lib/libc/include/any-linux-any/xen/*
-       lib/libc/include/arc-linux-any/asm/byteorder.h
-       lib/libc/include/arc-linux-any/asm/cachectl.h
-       lib/libc/include/arc-linux-any/asm/elf.h
-       lib/libc/include/arc-linux-any/asm/page.h
-       lib/libc/include/arc-linux-any/asm/ptrace.h
-       lib/libc/include/arc-linux-any/asm/sigcontext.h
-       lib/libc/include/arc-linux-any/asm/signal.h
-       lib/libc/include/arc-linux-any/asm/swab.h
-       lib/libc/include/arc-linux-any/asm/unistd.h
-       lib/libc/include/arm-linux-any/asm/posix_types.h
-       lib/libc/include/arm-linux-any/asm/ptrace.h
-       lib/libc/include/arm-linux-any/asm/setup.h
-       lib/libc/include/arm-linux-any/asm/unistd.h
-       lib/libc/include/hexagon-linux-any/asm/byteorder.h
-       lib/libc/include/hexagon-linux-any/asm/param.h
-       lib/libc/include/hexagon-linux-any/asm/ptrace.h
-       lib/libc/include/hexagon-linux-any/asm/setup.h
-       lib/libc/include/hexagon-linux-any/asm/sigcontext.h
-       lib/libc/include/hexagon-linux-any/asm/signal.h
-       lib/libc/include/hexagon-linux-any/asm/swab.h
-       lib/libc/include/hexagon-linux-any/asm/unistd.h
-       lib/libc/include/powerpc-linux-any/asm/eeh.h
-       lib/libc/include/powerpc-linux-any/asm/kvm.h
-       lib/libc/include/powerpc-linux-any/asm/kvm_para.h
-       lib/libc/include/powerpc-linux-any/asm/perf_event.h
-       lib/libc/include/powerpc-linux-any/asm/ps3fb.h
+       lib/libc/include/arc-linux-any/asm/*
+       lib/libc/include/hexagon-linux-any/asm/*
        lib/libc/include/riscv-linux-any/asm/unistd.h
 Copyright: 2012-2013, ARM Ltd
            Author: Alex Williamson <alex.williamson@redhat.com>
@@ -2192,6 +1388,17 @@ Copyright: 2012-2013, ARM Ltd
            With inspiration from the i915 driver
            2013-2015, Xilinx, Inc
 License: GPL-2
+
+Files: lib/libc/include/aarch64-linux-any/asm/bpf_perf_event.h
+       lib/libc/include/aarch64-linux-any/asm/mman.h
+       lib/libc/include/aarch64-linux-any/asm/perf_regs.h
+       lib/libc/include/aarch64-linux-any/asm/posix_types.h
+       lib/libc/include/aarch64-linux-any/asm/sve_context.h
+       lib/libc/include/arc-linux-any/asm/setup.h
+       lib/libc/include/hexagon-linux-any/asm/registers.h
+       lib/libc/include/hexagon-linux-any/asm/user.h
+Copyright: 2015-2021, Zig Contributors
+License: Expat
 
 Files: lib/libc/wasi/*
 Copyright: 2012-2020, Arm Limited
