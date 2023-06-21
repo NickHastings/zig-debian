@@ -7,10 +7,6 @@ TESTS = fmt behavior compiler-rt minilibc compare-output standalone stack-traces
 %:
 	dh $@
 
-override_dh_auto_clean:
-	dh_auto_clean
-	\rm -rf zig-cache
-
 #override_dh_auto_test:
 #	XDG_CACHE_HOME= ./obj-$(DEB_HOST_MULTIARCH)/zig build test
 
