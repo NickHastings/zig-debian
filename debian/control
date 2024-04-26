@@ -2,11 +2,11 @@ Source: zig
 Section: devel
 Priority: optional
 Maintainer: Nick Hastings <nicholaschastings@gmail.com>
-Build-Depends: cmake, debhelper-compat (= 13), gcc (>= 7.0.0), zlib1g-dev,
+Build-Depends: cmake, debhelper-compat (= 13), gcc (>= 7.0.0), zlib1g-dev, chrpath,
  clang (>= 6.0.0),
- llvm-15-dev,
- libclang-15-dev,
- liblld-15-dev,
+ llvm-16-dev,
+ libclang-16-dev,
+ liblld-16-dev,
 Standards-Version: 4.6.1.0
 Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/zig-team/zig
